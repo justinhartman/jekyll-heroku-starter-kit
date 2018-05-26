@@ -1,151 +1,258 @@
 ---
-title: Markdown Cheatsheet
+title: Jekyll Heroku Starter Kit
 layout: default
 ---
-# Markdown Cheatsheet
+## Features
 
-This is a sample markdown file to help you write Markdown quickly :)
+This project will setup a minimum boilerplate template for running a Jekyll
+site on Heroku. With this, there are some additional Jekyll plugins installed
+for ease of use along with a default, minimal theme.
 
-## Text basics
+### General
 
-This is *italic* and this is **bold** .  another _italic_ and another __bold__
+- All required files to run a Jekyll site in minutes on Heroku.
+- [jekyll-theme-minimal][jekyll-theme-minimal] - Default minimal theme installed.
+- `static.json` - used by the Heroku static buildpack.
+- `Rakefile` - the Heroku Ruby buildpack runs rake assets:precompile 
+  when it’s available.
+- `config.ru` - the config file that enables this gem to serve your app on
+  Heroku using [RackJekyll][rack].
 
-This is `important` text. and percentage signs : % and `%`
+### Plugins
 
-This is a paragraph with a footnote (builtin parser only). [^note-id]
+These plugins are installed by default:
 
-## Indentation
+- [jemoji][jemoji]
+- [jekyll-mentions][jekyll-mentions]
+- [jekyll-feed][jekyll-feed]
+    - Generates an XML Feed at `http://yourdomain.com/feed.xml`
+- [jekyll-seo-tag][jekyll-seo-tag]
+- [jekyll-sitemap][jekyll-sitemap] 
+    - Generates a XML Sitemap at `http://yourdomain.com/sitemap.xml`
+    - Generates a `robots.txt` file at `http://yourdomain.com/robots.txt`
+- [jekyll-paginate-v2][jekyll-paginate-v2]
+- [jekyll-include-cache][jekyll-include-cache]
+- [jekyll-last-modified-at][jekyll-last-modified-at]
+- [jekyll-redirect-from][jekyll-redirect-from]
 
-> Here is some indented text
->> even more indented
+See the `_config.yml` and `index.md` files for various settings which have been
+pre-configured to work with some of these plugins.
 
-## Titles
-# Big title (h1)
-## Middle title (h2)
-### Smaller title (h3)
-#### and so on (hX)
-##### and so on (hX)
-###### and so on (hX)
+## Getting Started
 
-## Example lists (1)
+These instructions will get your copy of the project up and running on your
+local machine for development and testing purposes. [See deployment][deploy]
+for notes on how to deploy the project on a live system.
 
-- bullets can be `-`, `+`, or `*`
-- bullet list 1
-- bullet list 2
-  - sub item 1
-  - sub item 2
+### Prerequisites
 
-      with indented text inside
+The following prerequisites need to be installed on your machine for this to
+work.
 
-- bullet list 3
-+ bullet list 4
-* bullet list 5
+1. [Heroku Toolbelt][toolbelt] - the CLI interface to Heroku.
+1. A package manager for your Operating System:
+    - macOS: [Homebrew][brew]
+    - Windows: [Chocolatey][choc]
+    - Linux: `apt-get` or `yum` (distro dependent)
+1. [Ruby][ruby]
+1. [Bundler][bundler] - to manage Ruby gems (see below).
 
-## Links
+Once you have installed `ruby`, installing `bundler` is pretty straightforward.
+Simply run this command in a terminal window.
 
-This is an [example inline link](http://lmgtfy.com/) and [another one with a title](http://lmgtfy.com/ "Hello, world").
-
-Links can also be reference based : [reference 1][ref1] or [reference 2 with title][ref2].
-
-References are usually placed at the bottom of the document
-
-## Images
-
-A sample image :
-
-![revolunet logo](http://www.revolunet.com/static/parisjs8/img/logo-revolunet-carre.jpg "revolunet logo")
-
-As links, images can also use references instead of inline links :
-
-![revolunet logo][revolunet-logo]
-
-## Code
-
-It's quite easy to show code in markdown files.
-
-Backticks can be used to `highlight` some words.
-
-Also, any indented block is considered a code block.  If `enable_highlight` is `true`, syntax highlighting will be included (for the builtin parser - the github parser does this automatically).
-
-    <script>
-        document.location = 'http://lmgtfy.com/?q=markdown+cheat+sheet';
-    </script>
-
-Some Python code :
-
-```python
-import random
-
-class CardGame(object):
-    """ a sample python class """
-    NB_CARDS = 32
-    def __init__(self, cards=5):
-        self.cards = random.sample(range(self.NB_CARDS), 5)
-        print 'ready to play'
+```terminal
+$ gem install bundler
 ```
 
-Some Javascript code :
+## Installing
 
-```js
-var config = {
-    duration: 5,
-    comment: 'WTF'
-}
-// callbacks beauty un action
-async_call('/path/to/api', function(json) {
-    another_call(json, function(result2) {
-        another_another_call(result2, function(result3) {
-            another_another_another_call(result3, function(result4) {
-                alert('And if all went well, i got my result :)');
-            });
-        });
-    });
-})
+### Clone the Repository
+
+The first step is to clone this repository to a location on your computer. For
+this example we will assume that your default install location is a folder 
+called `jekyll-heroku-starter-kit`.
+
+```terminal
+$ git clone https://github.com/justinhartman/jekyll-heroku-starter-kit
 ```
 
-[^note-id]: This is the text of the note.
+The above command will checkout the source code to the folder
+`jekyll-heroku-starter-kit/`. You can change the default location by specifying
+a folder name in the checkout command with:
 
-## Examples
+```terminal
+$ git clone https://github.com/justinhartman/jekyll-heroku-starter-kit custom-folder
+```
 
-### Tables
+### Creating the Heroku App
 
-The `tables` extension of the *Python-Markdown* parser is activated by default,
-but is currently **not** available in *Markdown2*.
+Running the `heroku apps:create` command will create a new app on Heroku and
+add a reference to a git repository on Heroku itself.
 
-The syntax was adopted from the [php markdown project](http://michelf.ca/projects/php-markdown/extra/#table),
-and is also used in github flavoured markdown.
+```terminal
+$ cd jekyll-heroku-starter-kit/
+$ heroku apps:create jekyll-heroku-starter-kit
+Creating ⬢ jekyll-heroku-starter-kit... done
+https://jekyll-heroku-starter-kit.herokuapp.com/ | https://git.heroku.com/jekyll-heroku-starter-kit.git
+```
 
-| Year | Temperature (low) | Temperature (high) |  
-| ---- | ----------------- | -------------------|  
-| 1900 |               -10 |                 25 |  
-| 1910 |               -15 |                 30 |  
-| 1920 |               -10 |                 32 |  
+You can check that the new Heroku repo has been added to your `git` repo with
+the following command.
 
-### Wiki Tables
+```terminal
+$ git config --list
+remote.heroku.url=https://git.heroku.com/jekyll-heroku-starter-kit.git
+remote.heroku.fetch=+refs/heads/*:refs/remotes/heroku/*
+remote.origin.url=https://github.com/justinhartman/jekyll-heroku-starter-kit.git
+remote.origin.fetch=+refs/heads/*:refs/remotes/origin/*
+```
 
-If you are using *Markdown2* with the `wiki-tables` extra activated you should see a table below:
+### Install required Gems
 
-|| *Year* || *Temperature (low)* || *Temperature (high)* ||  
-||   1900 ||                 -10 ||                   25 ||  
-||   1910 ||                 -15 ||                   30 ||  
-||   1920 ||                 -10 ||                   32 ||  
+The `Gemfile` in this repository contains everything needed to setup Jekyll and
+get your app ready for publishing to Heroku. Run the following command to 
+install all the required dependencies.
 
-### Definition Lists
+```terminal
+$ bundle install --path vendor/bundle
+```
 
-This example requires *Python Markdown*'s `def_list` extension.
+### Adding Heroku Buildpacks
 
-Apple
-:   Pomaceous fruit of plants of the genus Malus in 
-    the family Rosaceae.
+We need to install a few buildpacks to tell Heroku how to handle the app. You
+need to install the following by executing these commands:
 
-Orange
-:   The fruit of an evergreen tree of the genus Citrus.
+```terminal
+$ heroku buildpacks:add heroku/ruby
+$ heroku buildpacks:add https://github.com/heroku/heroku-buildpack-static
+```
 
-## About
+### Running Jekyll Locally
 
-This plugin and this sample file is proudly brought to you by the [revolunet team][revolunet].
+Once done with the above you should test your Jekyll installation to ensure 
+that you are able to run the site on your machine. This is very important
+before deploying your app to Heroku. 
 
-[ref1]: http://revolunet.com
-[ref2]: http://revolunet.com "rich web apps"
-[revolunet]: http://revolunet.com
-[revolunet-logo]: http://www.revolunet.com/static/parisjs8/img/logo-revolunet-carre.jpg "revolunet logo"
+Run the `jekyll serve` command to test your app.
+
+```terminal
+$ bundle exec jekyll serve
+Configuration file: /jekyll-heroku-starter-kit/_config.yml
+Invalid theme folder: _includes
+            Source: /jekyll-heroku-starter-kit
+       Destination: /jekyll-heroku-starter-kit/_site
+ Incremental build: disabled. Enable with --incremental
+      Generating...
+         AutoPages: Disabled/Not configured in site.config.
+        Pagination: Disabled in site.config.
+                    done in 1.238 seconds.
+ Auto-regeneration: enabled for '/jekyll-heroku-starter-kit'
+    Server address: http://127.0.0.1:4000
+  Server running... press ctrl-c to stop.
+```
+
+By visiting [http://127.0.0.1:4000][localhost] you should see your newly
+built Jekyll site. This is an example of what you should be seeing.
+
+![][livesite]
+
+## Deployment
+
+With everything setup in the steps above you can now deploy to Heroku. Simply
+execute the following commands to deploy a build to heroku.
+
+```terminal
+$ cd jekyll-heroku-starter-kit/
+$ git push heroku master
+```
+
+Visit your Heroku URL (e.g. https://jekyll-heroku-starter-kit.herokuapp.com)
+and you should see the same site you built on your local machine, now published
+on Heroku.
+
+## Built With
+
+- [Jekyll 3.8.2][jekyll]
+- [Heroku][heroku-main]
+- [ruby 2.3.3p222][ruby]
+- [Homebrew 1.6.3-56-g5e77335][brew]
+- [Visual Studio Code][vscode]
+- [Bundler version 1.16.1][bundler]
+
+## Contributing
+
+Please read the [CONTRIBUTING.md][CONTRIBUTING] file for details on how you
+can get involved in the project as well as the process for submitting bugs
+and pull requests.
+
+## Code of Conduct
+
+Please read the [CODE_OF_CONDUCT.md][COC] file for the guidelines that govern
+the community.
+
+## Versioning
+
+We use [Semantic Versioning][semver] for software versions of this project.
+For a list of all the versions available, see the [tags][tags] and
+[releases][releases] on this repository.
+
+## Change-Log
+
+View the [CHANGELOG.md][changelog] file for a detailed list of changes,
+along with specific tasks completed for each version released to date.
+
+## Authors
+
+- Justin Hartman - [@justinhartman][author-1]
+
+Also see the list of [contributors][contribs] who have participated in this
+project.
+
+## License
+
+This project is licensed under the AGPL-3.0 License. See the
+[LICENSE][license] file for full details.
+
+## Acknowledgements
+
+Special thanks go out to the following people and projects who have helped in
+some way to make this project a reality.
+
+- [@justinhartman/.github][.github] - for the awesome Github project templates.
+- [Andy Croll][andy] - for his post on serving a Jekyll site on Heroku.
+- [Heroku][heroku] - for their post on running Jekyll on their platform.
+
+[deploy]: #deployment
+[CONTRIBUTING]: CONTRIBUTING.md
+[COC]: CODE_OF_CONDUCT.md
+[license]: LICENSE
+[changelog]: CHANGELOG.md
+[semver]: http://semver.org
+[tags]: https://github.com/justinhartman/jekyll-heroku-starter-kit/tags
+[releases]: https://github.com/justinhartman/jekyll-heroku-starter-kit/releases
+[contribs]: https://github.com/justinhartman/jekyll-heroku-starter-kit/contributors
+[author-1]: https://github.com/justinhartman
+[.github]: https://github.com/justinhartman/.github
+[toolbelt]: https://devcenter.heroku.com/articles/heroku-cli
+[brew]: http://brew.sh/
+[choc]: https://chocolatey.org/
+[ruby]: https://www.ruby-lang.org/en/documentation/installation/
+[bundler]: https://bundler.io/
+[jemoji]: https://github.com/jekyll/jemoji
+[jekyll-mentions]: https://github.com/jekyll/jekyll-mentions
+[jekyll-feed]: https://github.com/jekyll/jekyll-feed
+[jekyll-seo-tag]: https://github.com/jekyll/jekyll-seo-tag
+[jekyll-sitemap]: https://github.com/jekyll/jekyll-sitemap
+[jekyll-paginate-v2]: https://github.com/sverrirs/jekyll-paginate-v2
+[jekyll-include-cache]: https://github.com/benbalter/jekyll-include-cache
+[jekyll-last-modified-at]: https://github.com/gjtorikian/jekyll-last-modified-at
+[jekyll-redirect-from]: https://github.com/jekyll/jekyll-redirect-from
+[jekyll-theme-minimal]: https://github.com/pages-themes/minimal
+[rack]: https://github.com/adaoraul/rack-jekyll
+[andy]: https://andycroll.com/ruby/serving-a-jekyll-blog-using-heroku/
+[heroku]: https://blog.heroku.com/jekyll-on-heroku
+[jekyll]: https://jekyllrb.com/
+[heroku-main]: https://www.heroku.com/
+[vscode]: https://code.visualstudio.com/
+[localhost]: http://127.0.0.1:4000
+[livesite]: https://ws1.sinaimg.cn/large/006tKfTcgy1frp6xdrivvj30uj0onaeq.jpg

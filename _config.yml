@@ -1,14 +1,19 @@
 ---
 title: Jekyll Heroku Starter Kit
+description: Minimum boilerplate code for setting up and running a Jekyll site on Heroku.
 timezone: Africa/Johannesburg
 locale: en_ZA
 # url: 
 # baseurl:
+logo: https://via.placeholder.com/250x100.png/E8117F/fff?text=Logo+Placeholder
+show_downloads: true
+google_analytics: UA-100937492-4
 theme: jekyll-theme-minimal
 exclude:
+- '_site'
 - '.bundle'
 - '.github'
-- '_site'
+- '.sass-cache'
 - 'vendor'
 - '_config.yml'
 - '.gitignore'
@@ -25,6 +30,11 @@ exclude:
 - 'starter-kit.code-workspace'
 - 'static.json'
 plugins:
-- jekyll-redirect-from
+- jekyll-feed
 - jekyll-seo-tag
+- jekyll-sitemap
+- jekyll-paginate-v2
+- jekyll-include-cache
+- jekyll-last-modified-at
+- jekyll-redirect-from
 ---

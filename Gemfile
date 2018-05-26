@@ -6,6 +6,11 @@ gem 'rack-jekyll'
 gem 'rake'
 gem 'jekyll-theme-minimal'
 group :jekyll_plugins do
-  gem 'jekyll-redirect-from'
+  gem 'jekyll-feed'
   gem 'jekyll-seo-tag'
+  gem 'jekyll-sitemap'
+  gem 'jekyll-paginate-v2'
+  gem 'jekyll-include-cache'
+  gem 'jekyll-last-modified-at'
+  gem 'jekyll-redirect-from'
 end
