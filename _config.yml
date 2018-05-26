@@ -1,8 +1,9 @@
 ---
-title: 22 Digital Agency Redirect
+title: Jekyll Heroku Starter Kit
 timezone: Africa/Johannesburg
 locale: en_ZA
-# url: https://22digital.agency/
+# url: 
+# baseurl:
 theme: jekyll-theme-minimal
 exclude:
 - '.bundle'
