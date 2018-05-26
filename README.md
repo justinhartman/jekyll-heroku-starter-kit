@@ -36,7 +36,7 @@ for ease of use along with a default, minimal theme.
 - All required files to run a Jekyll site in minutes on Heroku.
 - [jekyll-theme-minimal][jekyll-theme-minimal] - Default minimal theme installed.
 - `static.json` - used by the Heroku static buildpack.
-- `Rakefile` - the Heroku Ruby buildpack runs rake assets:precompile 
+- `Rakefile` - the Heroku Ruby buildpack runs `rake assets:precompile`
   when it’s available.
 - `config.ru` - the config file that enables this gem to serve your app on
   Heroku using [RackJekyll][rack].
@@ -48,11 +48,11 @@ These plugins are installed by default:
 - [jemoji][jemoji]
 - [jekyll-mentions][jekyll-mentions]
 - [jekyll-feed][jekyll-feed]
-    - Generates an XML Feed at `http://yourdomain.com/feed.xml`
+  - Generates an XML Feed at `http://yourdomain.com/feed.xml`
 - [jekyll-seo-tag][jekyll-seo-tag]
-- [jekyll-sitemap][jekyll-sitemap] 
-    - Generates a XML Sitemap at `http://yourdomain.com/sitemap.xml`
-    - Generates a `robots.txt` file at `http://yourdomain.com/robots.txt`
+- [jekyll-sitemap][jekyll-sitemap]
+  - Generates a XML Sitemap at `http://yourdomain.com/sitemap.xml`
+  - Generates a `robots.txt` file at `http://yourdomain.com/robots.txt`
 - [jekyll-paginate-v2][jekyll-paginate-v2]
 - [jekyll-include-cache][jekyll-include-cache]
 - [jekyll-last-modified-at][jekyll-last-modified-at]
@@ -74,9 +74,9 @@ work.
 
 1. [Heroku Toolbelt][toolbelt] - the CLI interface to Heroku.
 1. A package manager for your Operating System:
-    - macOS: [Homebrew][brew]
-    - Windows: [Chocolatey][choc]
-    - Linux: `apt-get` or `yum` (distro dependent)
+   - macOS: [Homebrew][brew]
+   - Windows: [Chocolatey][choc]
+   - Linux: `apt-get` or `yum` (distro dependent)
 1. [Ruby][ruby]
 1. [Bundler][bundler] - to manage Ruby gems (see below).
 
@@ -92,7 +92,7 @@ $ gem install bundler
 ### 3.1. Clone the Repository
 
 The first step is to clone this repository to a location on your computer. For
-this example we will assume that your default install location is a folder 
+this example we will assume that your default install location is a folder
 called `jekyll-heroku-starter-kit`.
 
 ```terminal
@@ -133,7 +133,7 @@ remote.origin.fetch=+refs/heads/*:refs/remotes/origin/*
 ### 3.3. Install required Gems
 
 The `Gemfile` in this repository contains everything needed to setup Jekyll and
-get your app ready for publishing to Heroku. Run the following command to 
+get your app ready for publishing to Heroku. Run the following command to
 install all the required dependencies.
 
 ```terminal
@@ -152,9 +152,9 @@ $ heroku buildpacks:add https://github.com/heroku/heroku-buildpack-static
 
 ### 3.5. Running Jekyll Locally
 
-Once done with the above you should test your Jekyll installation to ensure 
+Once done with the above you should test your Jekyll installation to ensure
 that you are able to run the site on your machine. This is very important
-before deploying your app to Heroku. 
+before deploying your app to Heroku.
 
 Run the `jekyll serve` command to test your app.
 
@@ -177,7 +177,7 @@ Invalid theme folder: _includes
 By visiting [http://127.0.0.1:4000][localhost] you should see your newly
 built Jekyll site. This is an example of what you should be seeing.
 
-![][livesite]
+![Jekyll Site][livesite]
 
 ## 4. Deployment
 
@@ -351,7 +351,7 @@ some way to make this project a reality.
 - [Andy Croll][andy] - for his post on serving a Jekyll site on Heroku.
 - [Heroku][heroku] - for their post on running Jekyll on their platform.
 
-[deploy]: #deployment
+[deploy]: #4-deployment
 [CONTRIBUTING]: CONTRIBUTING.md
 [COC]: CODE_OF_CONDUCT.md
 [license]: LICENSE

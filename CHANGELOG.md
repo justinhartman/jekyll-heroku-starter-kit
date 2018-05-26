@@ -3,6 +3,16 @@
 Below is a detailed change-log, along with specific tasks completed, for each
 version released to date for the Jekyll Heroku Starter Kit.
 
+## Version 1.0.1 (26/05/2018)
+
+Minor edits; don't affect functionality.
+
+- [#new](#new)
+  - New settings added to VS Code Workspace file.
+- [#bugfix](#bugfix)
+  - Fixed broken link in `README.md`.
+  - Removed unnecessary whitespace in `README.md` and `index.md`.
+
 ## Version 1.0.0 (26/05/2018)
 
 First _production-ready_ release. Works out the box.
@@ -27,4 +37,3 @@ First _production-ready_ release. Works out the box.
 
 - [#new](#new)
   - Initial Commit
-- [#bugfix](#bugfix)
