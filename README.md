@@ -384,5 +384,5 @@ some way to make this project a reality.
 [heroku-main]: https://www.heroku.com/
 [vscode]: https://code.visualstudio.com/
 [localhost]: http://127.0.0.1:4000
-[livesite]: https://ws1.sinaimg.cn/large/006tKfTcgy1frp6xdrivvj30uj0onaeq.jpg
+[livesite]: https://camo.githubusercontent.com/2733ea1835f3fe38ce6d0e120dd631c9c9e4547f/68747470733a2f2f7773312e73696e61696d672e636e2f6c617267652f303036744b665463677931667270367864726976766a3330756a306f6e6165712e6a7067
 [example]: https://jekyll-heroku-starter-kit.herokuapp.com
