@@ -31,6 +31,8 @@ This project will setup a minimum boilerplate template for running a Jekyll
 site on Heroku. With this, there are some additional Jekyll plugins installed
 for ease of use along with a default, minimal theme.
 
+Here's what you get.
+
 ### 1.1. General
 
 - All required files to run a Jekyll site in minutes on Heroku.
@@ -45,8 +47,6 @@ for ease of use along with a default, minimal theme.
 
 These plugins are installed by default:
 
-- [jemoji][jemoji]
-- [jekyll-mentions][jekyll-mentions]
 - [jekyll-feed][jekyll-feed]
   - Generates an XML Feed at `http://yourdomain.com/feed.xml`
 - [jekyll-seo-tag][jekyll-seo-tag]
@@ -189,7 +189,7 @@ $ cd jekyll-heroku-starter-kit/
 $ git push heroku master
 ```
 
-This will generate a build log that should resemble to below success.
+This will generate a build log that should resemble the below success.
 
 ```console
 Counting objects: 6, done.
@@ -367,8 +367,6 @@ some way to make this project a reality.
 [choc]: https://chocolatey.org/
 [ruby]: https://www.ruby-lang.org/en/documentation/installation/
 [bundler]: https://bundler.io/
-[jemoji]: https://github.com/jekyll/jemoji
-[jekyll-mentions]: https://github.com/jekyll/jekyll-mentions
 [jekyll-feed]: https://github.com/jekyll/jekyll-feed
 [jekyll-seo-tag]: https://github.com/jekyll/jekyll-seo-tag
 [jekyll-sitemap]: https://github.com/jekyll/jekyll-sitemap
