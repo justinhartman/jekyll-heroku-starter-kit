@@ -1,12 +1,30 @@
-# Change-Log for ${domain}
+# Change-Log for the Jekyll Heroku Starter Kit
 
 Below is a detailed change-log, along with specific tasks completed, for each
-version released to date for ${domain}.
+version released to date for the Jekyll Heroku Starter Kit.
 
-## Version 0.0.1
-### ??/??/2018
+## Version 1.0.0 (26/05/2018)
+
+First _production-ready_ release. Works out the box.
 
 - [#new](#new)
-    + Initial Release
+  - Added the following files required by Heroku:
+    - `config.ru`
+    - `Procfile`
+  - Added `Gemfile` to install Jekyll.
+  - New `static.json` for the Heroku buildpack.
+  - New `Rakefile` for the Heroku buildpack.
+  - `index.md` that contains the contents of the `README.md` for the main site.
+  - Added a default minimal site theme (jekyll-theme-minimal).
 - [#enhancement](#enhancement)
+  - Updated all the `*.md` files from the @justinhartman/.github project.
+  - Updated `.gitignore` to exclude all project build files.
+  - Added some Visual Studio Code settings to the workspace file.
+  - Completed the contents for the `README.md` file with full setup and install
+    instructions.
+
+## Version 0.0.1 (26/05/2018)
+
+- [#new](#new)
+  - Initial Commit
 - [#bugfix](#bugfix)

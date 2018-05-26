@@ -166,7 +166,113 @@ $ cd jekyll-heroku-starter-kit/
 $ git push heroku master
 ```
 
-Visit your Heroku URL (e.g. https://jekyll-heroku-starter-kit.herokuapp.com)
+This will generate a build log that should resemble to below success.
+
+```console
+Counting objects: 6, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (6/6), done.
+Writing objects: 100% (6/6), 5.06 KiB | 647.00 KiB/s, done.
+Total 6 (delta 3), reused 0 (delta 0)
+remote: Compressing source files... done.
+remote: Building source:
+remote:
+remote: -----> Ruby app detected
+remote: -----> Compiling Ruby/Rack
+remote: -----> Using Ruby version: ruby-2.3.3
+remote: -----> Installing dependencies using bundler 1.15.2
+remote:        Running: bundle install --without development:test --path vendor/bundle --binstubs vendor/bundle/bin -j4 --deployment
+remote:        Warning: the running version of Bundler (1.15.2) is older than the version that created the lockfile (1.16.1). We suggest you upgrade to the latest version of Bundler by running `gem install bundler`.
+remote:        Fetching gem metadata from https://rubygems.org/..........
+remote:        Fetching version metadata from https://rubygems.org/..
+remote:        Fetching dependency metadata from https://rubygems.org/.
+remote:        Using rake 12.3.1
+remote:        Using public_suffix 3.0.2
+remote:        Using bundler 1.15.2
+remote:        Using colorator 1.1.0
+remote:        Using concurrent-ruby 1.0.5
+remote:        Using eventmachine 1.2.7
+remote:        Using http_parser.rb 0.6.0
+remote:        Using ffi 1.9.23
+remote:        Using forwardable-extended 2.6.0
+remote:        Using rb-fsevent 0.10.3
+remote:        Using ruby_dep 1.5.0
+remote:        Using kramdown 1.16.2
+remote:        Using liquid 4.0.0
+remote:        Using mercenary 0.3.6
+remote:        Using rouge 3.1.1
+remote:        Using safe_yaml 1.0.4
+remote:        Fetching posix-spawn 0.3.13
+remote:        Using rack 1.6.10
+remote:        Using i18n 0.9.5
+remote:        Using addressable 2.5.2
+remote:        Using rb-inotify 0.9.10
+remote:        Using em-websocket 0.5.1
+remote:        Using pathutil 0.16.1
+remote:        Using sass-listen 4.0.0
+remote:        Using listen 3.1.5
+remote:        Using sass 3.5.6
+remote:        Using jekyll-watch 2.0.0
+remote:        Using jekyll-sass-converter 1.5.2
+remote:        Using jekyll 3.8.2
+remote:        Fetching jekyll-feed 0.9.3
+remote:        Fetching jekyll-include-cache 0.1.0
+remote:        Installing posix-spawn 0.3.13 with native extensions
+remote:        Installing jekyll-include-cache 0.1.0
+remote:        Installing jekyll-feed 0.9.3
+remote:        Fetching jekyll-paginate-v2 1.9.4
+remote:        Using jekyll-redirect-from 0.13.0
+remote:        Using jekyll-seo-tag 2.5.0
+remote:        Fetching jekyll-sitemap 1.2.0
+remote:        Installing jekyll-paginate-v2 1.9.4
+remote:        Installing jekyll-sitemap 1.2.0
+remote:        Using rack-jekyll 0.5.0
+remote:        Using jekyll-theme-minimal 0.1.1
+remote:        Fetching jekyll-last-modified-at 1.0.1
+remote:        Installing jekyll-last-modified-at 1.0.1
+remote:        Bundle complete! 12 Gemfile dependencies, 38 gems now installed.
+remote:        Gems in the groups development and test were not installed.
+remote:        Bundled gems are installed into ./vendor/bundle.
+remote:        Bundle completed (4.39s)
+remote:        Cleaning up the bundler cache.
+remote:        Warning: the running version of Bundler (1.15.2) is older than the version that created the lockfile (1.16.1). We suggest you upgrade to the latest version of Bundler by running `gem install bundler`.
+remote:        The latest bundler is 1.16.2, but you are currently running 1.15.2.
+remote:        To update, run `gem install bundler`
+remote: -----> Detecting rake tasks
+remote: -----> Precompiling assets
+remote:        Running: rake assets:precompile
+remote:        Configuration file: /tmp/build_02fecdee16af99fdfb60e024ca330ed4/_config.yml
+remote:        Invalid theme folder: _includes
+remote:                    Source: /tmp/build_02fecdee16af99fdfb60e024ca330ed4
+remote:               Destination: /tmp/build_02fecdee16af99fdfb60e024ca330ed4/_site
+remote:         Incremental build: disabled. Enable with --incremental
+remote:              Generating...
+remote:                 AutoPages: Disabled/Not configured in site.config.
+remote:                Pagination: Disabled in site.config.
+remote:                            done in 0.556 seconds.
+remote:         Auto-regeneration: disabled. Use --watch to enable.
+remote:        Asset precompilation completed (1.28s)
+remote:
+remote: -----> Static HTML app detected
+remote:   % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+remote:                                  Dload  Upload   Total   Spent    Left  Speed
+remote: 100  838k  100  838k    0     0  6185k      0 --:--:-- --:--:-- --:--:-- 6212k
+remote: -----> Installed directory to /app/bin
+remote: -----> Discovering process types
+remote:        Procfile declares types -> web
+remote:
+remote: -----> Compressing...
+remote:        Done: 25M
+remote: -----> Launching...
+remote:        Released v12
+remote:        https://jekyll-heroku-starter-kit.herokuapp.com/ deployed to Heroku
+remote:
+remote: Verifying deploy... done.
+To https://git.heroku.com/jekyll-heroku-starter-kit.git
+   4c1eff6..65eeca2  master -> master
+```
+
+Visit your Heroku URL (e.g. [https://jekyll-heroku-starter-kit.herokuapp.com][example])
 and you should see the same site you built on your local machine, now published
 on Heroku.
 
@@ -256,3 +362,4 @@ some way to make this project a reality.
 [vscode]: https://code.visualstudio.com/
 [localhost]: http://127.0.0.1:4000
 [livesite]: https://ws1.sinaimg.cn/large/006tKfTcgy1frp6xdrivvj30uj0onaeq.jpg
+[example]: https://jekyll-heroku-starter-kit.herokuapp.com
