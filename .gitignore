@@ -1,1 +1,6 @@
 .git/
+_site/
+.bundle/
+.sass-cache/
+vendor/
+.vscode/
