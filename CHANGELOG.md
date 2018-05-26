@@ -3,6 +3,14 @@
 Below is a detailed change-log, along with specific tasks completed, for each
 version released to date for the Jekyll Heroku Starter Kit.
 
+## Version 1.1.0 (27/05/2018)
+
+- [#new](#new)
+  - Added security headers for the Ruby Static Buildpack [^note-id]
+- [#enhancement](#enhancement)
+  - Updated `README.md` and `index.md`.
+  - Various enhancements with `static.json` edits.
+
 ## Version 1.0.1 (26/05/2018)
 
 Minor edits; don't affect functionality.
@@ -37,3 +45,7 @@ First _production-ready_ release. Works out the box.
 
 - [#new](#new)
   - Initial Commit
+
+[^note-id]: These Headers come from the Heroku [Using HTTP Headers to Secure Your Site][blog] blog post.
+
+[blog]: https://blog.heroku.com/using-http-headers-to-secure-your-site
