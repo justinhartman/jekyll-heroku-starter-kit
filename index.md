@@ -1,6 +1,10 @@
 ---
 title: Jekyll Heroku Starter Kit
 layout: default
+seo:
+  title: ""
+  description: ""
+  keywords: "Hello World"
 ---
 ## Features
 
