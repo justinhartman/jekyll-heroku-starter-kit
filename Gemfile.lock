@@ -31,6 +31,11 @@ GEM
       jekyll (~> 3.3)
     jekyll-sass-converter (1.5.2)
       sass (~> 3.4)
+    jekyll-seo-tag (2.5.0)
+      jekyll (~> 3.3)
+    jekyll-theme-minimal (0.1.1)
+      jekyll (~> 3.5)
+      jekyll-seo-tag (~> 2.0)
     jekyll-watch (2.0.0)
       listen (~> 3.0)
     kramdown (1.16.2)
@@ -68,6 +73,8 @@ DEPENDENCIES
   bundler (= 1.16.1)
   jekyll
   jekyll-redirect-from
+  jekyll-seo-tag
+  jekyll-theme-minimal
   rack-jekyll
   rake
 
