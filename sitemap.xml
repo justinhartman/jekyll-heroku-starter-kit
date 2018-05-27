@@ -1,0 +1,24 @@
+---
+layout: blank
+permalink: /sitemap.xml
+sitemap:
+    changefreq: weekly
+    priority: 1.0
+---
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="{{ '/sitemap.xsl' | absolute_url }}"?>
+<urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+{%- for collection in site.collections %}
+  {%- for post in collection.docs %}
+    {%- unless collection.output == false %}
+    <url>
+        <loc>{{ post.url | absolute_url }}</loc>
+        <xhtml:link rel="alternate" hreflang="en" href="{{ post.url | absolute_url }}" />
+        <lastmod>{{ post.last_modified_at | date_to_xmlschema }}</lastmod>
+        <changefreq>{{ post.sitemap.changefreq }}</changefreq>
+        <priority>{{ post.sitemap.priority }}</priority>
+    </url>
+    {%- endunless -%}
+  {%- endfor -%}
+{% endfor %}
+</urlset>

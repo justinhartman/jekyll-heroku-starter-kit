@@ -4,10 +4,6 @@ gem 'bundler', '1.16.1'
 gem 'jekyll'
 gem 'rack-jekyll'
 gem 'rake'
-gem 'rack-cache'
-gem 'dalli'
-gem 'kgio'
-gem "memcachier"
 gem 'jekyll-theme-minimal'
 group :jekyll_plugins do
   gem 'jekyll-feed'

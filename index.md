@@ -1,10 +1,18 @@
 ---
-title: Jekyll Heroku Starter Kit
 layout: default
-seo:
-  title: ""
-  description: ""
-  keywords: "Hello World"
+# Settings for @jekyll-seo-tag
+title: Jekyll Heroku Starter Kit
+description: "This project will setup a minimum boilerplate template for running a Jekyll site on Heroku."
+image: /assets/post-pic.jpg
+author: justinhartman
+lang: en_ZA
+# Settings for @jekyll-sitemap
+sitemap:
+    changefreq: weekly
+    priority: 1.0
+# Set categories for the site and URL structure
+categories:
+  - blog
 ---
 ## Features
 

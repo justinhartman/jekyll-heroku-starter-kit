@@ -7,9 +7,19 @@ version released to date for the Jekyll Heroku Starter Kit.
 
 - [#new](#new)
   - Added security headers for the Ruby Static Buildpack [^note-id]
+  - Added a number of new gems to the `Gemfile`:
+    - `memcachier 0.0.2`
+    - `rack-cache`
+    - `dalli`
+    - `kgio`
+  - Configured and added the settings for `@jekyll-seo-tag` to `_config.yml`
+  - Configured and added the settings for `@jekyll-seo-tag` to `index.md`
+  - Configured and added the settings for `@jekyll-sitemap` to `index.md`
+  - Defined collections for use in `_config.yml`
 - [#enhancement](#enhancement)
   - Updated `README.md` and `index.md`.
   - Various enhancements with `static.json` edits.
+  - Major enhancement to the `Procfile`.
 
 ## Version 1.0.1 (26/05/2018)
 
