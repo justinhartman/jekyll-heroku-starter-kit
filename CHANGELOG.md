@@ -16,10 +16,18 @@ version released to date for the Jekyll Heroku Starter Kit.
   - Configured and added the settings for `@jekyll-seo-tag` to `index.md`
   - Configured and added the settings for `@jekyll-sitemap` to `index.md`
   - Defined collections for use in `_config.yml`
+  - Added customised `sitemap.xml` and a `sitemap.xsl` template file.
+  - Added customised `feed.xml` and a `feed.xslt.xml` template file.
+  - New `humans.md` file that outputs a file to
+    `http://yourdomain.com/robots.txt`.
 - [#enhancement](#enhancement)
   - Updated `README.md` and `index.md`.
   - Various enhancements with `static.json` edits.
   - Major enhancement to the `Procfile`.
+- [#bugfix](#bugfix)
+  - Fixed a build bug with the Gem dependencies.
+  - Update `_config.yml` by removing a duplicate `logo` key.
+  - Fixed bug where neither `sitemap.xml` nor `feed.xml` were rendering.
 
 ## Version 1.0.1 (26/05/2018)
 

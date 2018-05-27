@@ -62,8 +62,6 @@ facebook:
   app_id: 1234
   publisher: 1234
   admins: 1234
-# URL to a site-wide logo. Need this field for publisher meta-tag.
-logo: /assets/your-company-logo.png
 # Links to other social profiles or websites that relate to you.
 social:
   name: Justin Hartman

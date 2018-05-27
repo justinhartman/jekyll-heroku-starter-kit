@@ -1,5 +1,5 @@
 ---
-layout: blank
+layout: atom
 permalink: /feed.xml
 sitemap:
     changefreq: weekly

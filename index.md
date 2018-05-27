@@ -1,5 +1,6 @@
 ---
 layout: default
+published: true
 # Settings for @jekyll-seo-tag
 title: Jekyll Heroku Starter Kit
 description: "This project will setup a minimum boilerplate template for running a Jekyll site on Heroku."
@@ -7,6 +8,7 @@ image: /assets/post-pic.jpg
 author: justinhartman
 lang: en_ZA
 # Settings for @jekyll-sitemap
+# sitemap: false # Set to false if you want to prevent the post from appearing.
 sitemap:
     changefreq: weekly
     priority: 1.0
