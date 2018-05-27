@@ -1,7 +1,6 @@
 ---
 layout: atom
 permalink: /sitemap.xsl
-last_modified_at: 2018-04-19 23:48:22 +02:00
 sitemap:
     changefreq: yearly
     priority: 0.1

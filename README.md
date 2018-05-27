@@ -42,24 +42,32 @@ Here's what you get.
   when it’s available.
 - `config.ru` - the config file that enables this gem to serve your app on
   Heroku using [RackJekyll][rack].
+- New `humans.md` file that outputs a file to:
+  <https://jekyll-heroku-starter-kit.herokuapp.com/humans.txt>
 
 ### 1.2. Plugins
 
 These plugins are installed by default:
 
 - [jekyll-feed][jekyll-feed]
-  - Generates an XML Feed at `http://yourdomain.com/feed.xml`
+  - Generates an XML Feed at <https://jekyll-heroku-starter-kit.herokuapp.com/feed.xml>
 - [jekyll-seo-tag][jekyll-seo-tag]
+  - See config settings in `_config.yml` and `index.md`.
 - [jekyll-sitemap][jekyll-sitemap]
-  - Generates a XML Sitemap at `http://yourdomain.com/sitemap.xml`
-  - Generates a `robots.txt` file at `http://yourdomain.com/robots.txt`
+  - Generates a XML Sitemap at <https://jekyll-heroku-starter-kit.herokuapp.com/sitemap.xml>
+  - Generates a `robots.txt` file at <https://jekyll-heroku-starter-kit.herokuapp.com/robots.txt>
+  - See config settings in `index.md`.
 - [jekyll-paginate-v2][jekyll-paginate-v2]
+  - See config settings in `_config.yml` and `index.md`.
 - [jekyll-include-cache][jekyll-include-cache]
 - [jekyll-last-modified-at][jekyll-last-modified-at]
+  - See config settings in `index.md`.
 - [jekyll-redirect-from][jekyll-redirect-from]
+  - See config settings in `index.md`.
 
-See the `_config.yml` and `index.md` files for various settings which have been
-pre-configured to work with some of these plugins.
+See the `_config.yml` and `index.md` files for all the settings which have been
+pre-configured for you, to enable the usage of these plugins. They are all well
+labelled and documented.
 
 ## 2. Getting Started
 

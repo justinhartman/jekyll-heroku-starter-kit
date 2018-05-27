@@ -12,11 +12,23 @@ lang: en_ZA
 sitemap:
     changefreq: weekly
     priority: 1.0
+# Settings for @jekyll-last-modified-at
+# Delete if you want Jekyll to automatically set the last_modified date.
+last_modified_at: 2018-27-05 03:54:10 +02:00
+# Settings for @jekyll-redirect-from
+# Change the below to setup redirects from old pages. Useful when changing page
+# URLs.
+# redirect_from:
+#   - /post/123456789/
+#   - /post/123456789/my-amazing-post/
+# Settings for @jekyll-paginate-v2
+pagination: 
+  enabled: true
 # Set categories for the site and URL structure
 categories:
   - blog
 ---
-## Features
+## 1. Features
 
 This project will setup a minimum boilerplate template for running a Jekyll
 site on Heroku. With this, there are some additional Jekyll plugins installed
@@ -24,7 +36,7 @@ for ease of use along with a default, minimal theme.
 
 Here's what you get.
 
-### General
+### 1.1. General
 
 - All required files to run a Jekyll site in minutes on Heroku.
 - [jekyll-theme-minimal][jekyll-theme-minimal] - Default minimal theme installed.
@@ -33,41 +45,49 @@ Here's what you get.
   when it’s available.
 - `config.ru` - the config file that enables this gem to serve your app on
   Heroku using [RackJekyll][rack].
+- New `humans.md` file that outputs a file to:
+  <https://jekyll-heroku-starter-kit.herokuapp.com/humans.txt>
 
-### Plugins
+### 1.2. Plugins
 
 These plugins are installed by default:
 
 - [jekyll-feed][jekyll-feed]
-  - Generates an XML Feed at `http://yourdomain.com/feed.xml`
+  - Generates an XML Feed at <https://jekyll-heroku-starter-kit.herokuapp.com/feed.xml>
 - [jekyll-seo-tag][jekyll-seo-tag]
+  - See config settings in `_config.yml` and `index.md`.
 - [jekyll-sitemap][jekyll-sitemap]
-  - Generates a XML Sitemap at `http://yourdomain.com/sitemap.xml`
-  - Generates a `robots.txt` file at `http://yourdomain.com/robots.txt`
+  - Generates a XML Sitemap at <https://jekyll-heroku-starter-kit.herokuapp.com/sitemap.xml>
+  - Generates a `robots.txt` file at <https://jekyll-heroku-starter-kit.herokuapp.com/robots.txt>
+  - See config settings in `index.md`.
 - [jekyll-paginate-v2][jekyll-paginate-v2]
+  - See config settings in `_config.yml` and `index.md`.
 - [jekyll-include-cache][jekyll-include-cache]
 - [jekyll-last-modified-at][jekyll-last-modified-at]
+  - See config settings in `index.md`.
 - [jekyll-redirect-from][jekyll-redirect-from]
+  - See config settings in `index.md`.
 
-See the `_config.yml` and `index.md` files for various settings which have been
-pre-configured to work with some of these plugins.
+See the `_config.yml` and `index.md` files for all the settings which have been
+pre-configured for you, to enable the usage of these plugins. They are all well
+labelled and documented.
 
-## Getting Started
+## 2. Getting Started
 
 These instructions will get your copy of the project up and running on your
 local machine for development and testing purposes. [See deployment][deploy]
 for notes on how to deploy the project on a live system.
 
-### Prerequisites
+### 2.1. Prerequisites
 
 The following prerequisites need to be installed on your machine for this to
 work.
 
 1. [Heroku Toolbelt][toolbelt] - the CLI interface to Heroku.
 1. A package manager for your Operating System:
-    - macOS: [Homebrew][brew]
-    - Windows: [Chocolatey][choc]
-    - Linux: `apt-get` or `yum` (distro dependent)
+   - macOS: [Homebrew][brew]
+   - Windows: [Chocolatey][choc]
+   - Linux: `apt-get` or `yum` (distro dependent)
 1. [Ruby][ruby]
 1. [Bundler][bundler] - to manage Ruby gems (see below).
 
@@ -78,9 +98,9 @@ Simply run this command in a terminal window.
 $ gem install bundler
 ```
 
-## Installing
+## 3. Installing
 
-### Clone the Repository
+### 3.1. Clone the Repository
 
 The first step is to clone this repository to a location on your computer. For
 this example we will assume that your default install location is a folder
@@ -98,7 +118,7 @@ a folder name in the checkout command with:
 $ git clone https://github.com/justinhartman/jekyll-heroku-starter-kit custom-folder
 ```
 
-### Creating the Heroku App
+### 3.2. Creating the Heroku App
 
 Running the `heroku apps:create` command will create a new app on Heroku and
 add a reference to a git repository on Heroku itself.
@@ -121,7 +141,7 @@ remote.origin.url=https://github.com/justinhartman/jekyll-heroku-starter-kit.git
 remote.origin.fetch=+refs/heads/*:refs/remotes/origin/*
 ```
 
-### Install required Gems
+### 3.3. Install required Gems
 
 The `Gemfile` in this repository contains everything needed to setup Jekyll and
 get your app ready for publishing to Heroku. Run the following command to
@@ -131,7 +151,7 @@ install all the required dependencies.
 $ bundle install --path vendor/bundle
 ```
 
-### Adding Heroku Buildpacks
+### 3.4. Adding Heroku Buildpacks
 
 We need to install a few buildpacks to tell Heroku how to handle the app. You
 need to install the following by executing these commands:
@@ -141,7 +161,7 @@ $ heroku buildpacks:add heroku/ruby
 $ heroku buildpacks:add https://github.com/heroku/heroku-buildpack-static
 ```
 
-### Running Jekyll Locally
+### 3.5. Running Jekyll Locally
 
 Once done with the above you should test your Jekyll installation to ensure
 that you are able to run the site on your machine. This is very important
@@ -170,7 +190,7 @@ built Jekyll site. This is an example of what you should be seeing.
 
 ![Jekyll Site][livesite]
 
-## Deployment
+## 4. Deployment
 
 With everything setup in the steps above you can now deploy to Heroku. Simply
 execute the following commands to deploy a build to heroku.
@@ -290,7 +310,7 @@ Visit your Heroku URL (e.g. [https://jekyll-heroku-starter-kit.herokuapp.com][ex
 and you should see the same site you built on your local machine, now published
 on Heroku.
 
-## Built With
+## 5. Built With
 
 - [Jekyll 3.8.2][jekyll]
 - [Heroku][heroku-main]
@@ -299,41 +319,41 @@ on Heroku.
 - [Visual Studio Code][vscode]
 - [Bundler version 1.16.1][bundler]
 
-## Contributing
+## 6. Contributing
 
 Please read the [CONTRIBUTING.md][CONTRIBUTING] file for details on how you
 can get involved in the project as well as the process for submitting bugs
 and pull requests.
 
-## Code of Conduct
+## 7. Code of Conduct
 
 Please read the [CODE_OF_CONDUCT.md][COC] file for the guidelines that govern
 the community.
 
-## Versioning
+## 8. Versioning
 
 We use [Semantic Versioning][semver] for software versions of this project.
 For a list of all the versions available, see the [tags][tags] and
 [releases][releases] on this repository.
 
-## Change-Log
+## 9. Change-Log
 
 View the [CHANGELOG.md][changelog] file for a detailed list of changes,
 along with specific tasks completed for each version released to date.
 
-## Authors
+## 10. Authors
 
 - Justin Hartman - [@justinhartman][author-1]
 
 Also see the list of [contributors][contribs] who have participated in this
 project.
 
-## License
+## 11. License
 
 This project is licensed under the AGPL-3.0 License. See the
 [LICENSE][license] file for full details.
 
-## Acknowledgements
+## 12. Acknowledgements
 
 Special thanks go out to the following people and projects who have helped in
 some way to make this project a reality.
