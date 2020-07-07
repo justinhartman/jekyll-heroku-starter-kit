@@ -2,6 +2,7 @@ source 'https://rubygems.org'
 ruby '2.6.3'
 gem 'bundler', '1.17.2'
 gem "jekyll"
+gem "rack", ">= 2.1.4"
 gem 'rack-jekyll'
 gem 'rake'
 gem 'jekyll-theme-minimal'

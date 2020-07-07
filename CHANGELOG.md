@@ -7,6 +7,7 @@ version released to date for the Jekyll Heroku Starter Kit.
 
 - [#bugfix](#bugfix)
   - Fixed OS Command Injection in Rake [CVE-2020-8130](https://github.com/advisories/GHSA-jppv-gw3r-w3q8).
+  - Fixed Directory traversal in Rack::Directory app bundled with Rack [CVE-2020-8161](https://github.com/advisories/GHSA-5f9h-9pjv-v6j7).
   - Fixed Percent-encoded cookies can be used to overwrite existing prefixed cookie names [CVE-2020-8184](https://github.com/advisories/GHSA-j6w9-fv6q-3q52).
 - [#enhancement](#enhancement)
   - Updated `jekyll` to `3.7.8`.
