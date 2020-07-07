@@ -3,6 +3,17 @@
 Below is a detailed change-log, along with specific tasks completed, for each
 version released to date for the Jekyll Heroku Starter Kit.
 
+## Version 1.3.0 (07/07/2020)
+
+- [#bugfix](#bugfix)
+  - Fixed OS Command Injection in Rake [CVE-2020-8130](https://github.com/advisories/GHSA-jppv-gw3r-w3q8).
+  - Fixed Percent-encoded cookies can be used to overwrite existing prefixed cookie names [CVE-2020-8184](https://github.com/advisories/GHSA-j6w9-fv6q-3q52).
+- [#enhancement](#enhancement)
+  - Updated `jekyll` to `3.7.8`.
+  - Updated `bundler` to `1.17.2`.
+  - Updated `ruby` to `2.6.3`.
+  - Updated `README.md` and `index.md`.
+
 ## Version 1.2.0 (27/05/2018)
 
 - [#new](#new)
