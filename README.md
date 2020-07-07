@@ -309,12 +309,11 @@ on Heroku.
 
 ## 5. Built With
 
-- [Jekyll 3.8.2][jekyll]
+- [Jekyll 3.8.7][jekyll]
 - [Heroku][heroku-main]
-- [ruby 2.3.3p222][ruby]
-- [Homebrew 1.6.3-56-g5e77335][brew]
-- [Visual Studio Code][vscode]
-- [Bundler version 1.16.1][bundler]
+- [ruby 2.6.3][ruby]
+- [Homebrew 2.4.0][brew]
+- [Bundler version 1.17.2][bundler]
 
 ## 6. Contributing
 
@@ -388,7 +387,6 @@ some way to make this project a reality.
 [heroku]: https://blog.heroku.com/jekyll-on-heroku
 [jekyll]: https://jekyllrb.com/
 [heroku-main]: https://www.heroku.com/
-[vscode]: https://code.visualstudio.com/
 [localhost]: http://127.0.0.1:4000
-[livesite]: https://camo.githubusercontent.com/2733ea1835f3fe38ce6d0e120dd631c9c9e4547f/68747470733a2f2f7773312e73696e61696d672e636e2f6c617267652f303036744b665463677931667270367864726976766a3330756a306f6e6165712e6a7067
+[livesite]: /config/livesite.jpg
 [example]: https://jekyll-heroku-starter-kit.herokuapp.com

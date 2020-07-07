@@ -2,7 +2,7 @@
 title: Jekyll Heroku Starter Kit
 description: Minimum boilerplate code for setting up and running a Jekyll site on Heroku.
 timezone: Africa/Johannesburg
-locale: en_ZA
+locale: en_GB
 ## Set the url to your site below ##
 url:
 baseurl:
@@ -40,7 +40,6 @@ exclude:
 - 'Procfile'
 - 'Rakefile'
 - 'README.md'
-- 'starter-kit.code-workspace'
 - 'static.json'
 ## Configure and setup plugins for the site. ##
 plugins:
@@ -67,9 +66,8 @@ social:
   name: Justin Hartman
   links:
     - https://twitter.com/justinhartman
-    - https://www.facebook.com/justin.hartman.me
+    - https://www.facebook.com/justinhartman.blog
     - https://www.linkedin.com/in/justinhartman
-    - https://plus.google.com/+iamjustinhartman
     - https://github.com/justinhartman
 # When you verify with either of the Webmaster Tools below, enter the
 # verification key below.
@@ -80,7 +78,7 @@ webmaster_verifications:
   yandex: 1234
   baidu: 1234
 # Setting a default image:
-# Settings to provide a default Twitter Card or OGP image to all of your 
+# Settings to provide a default Twitter Card or OGP image to all of your
 # posts and pages.
 defaults:
   - scope:
@@ -94,7 +92,7 @@ pagination:
   collection: 'posts'
   per_page: 10
   permalink: '/page/:num/' # Pages are index.html inside this folder (default)
-  #permalink: '/page/:num.html' # Pages are simple html files 
+  #permalink: '/page/:num.html' # Pages are simple html files
   #permalink: '/page/:num' # Pages are html files, linked jekyll extensionless permalink style.
   title: ':title - page :num'
   limit: 0 # 0 means all
@@ -102,10 +100,10 @@ pagination:
   sort_reverse: true # Optional, sorts the posts in reverse order
   category: 'posts'
   tag: ''
-  locale: 'en_ZA'
-  # Optional,omit or set both before and after to zero to disable. 
-  # Controls how the pagination trail for the paginated pages look like. 
-  trail: 
+  locale: 'en_GB'
+  # Optional,omit or set both before and after to zero to disable.
+  # Controls how the pagination trail for the paginated pages look like.
+  trail:
     before: 2
     after: 2
   # Optional, the default file extension for generated pages (e.g html, json, xml).

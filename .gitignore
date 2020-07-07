@@ -3,4 +3,4 @@ _site/
 .bundle/
 .sass-cache/
 vendor/
-.vscode/
+.jekyll-metadata
