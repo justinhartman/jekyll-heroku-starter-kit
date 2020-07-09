@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1024px" height="1024px" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>22 Digital Logo</title>
+    <g id="22-Digital-Logo" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <polygon id="Pixel-Block" fill="#2D3692" points="52 1024 52 279 312 279 312 411 444 411 444 542 708 542 708 674 840 674 840 908 840 1024"></polygon>
+        <g id="Individual-Pixels" transform="translate(444.000000, 15.000000)">
+            <rect id="Rectangle" fill="#773093" x="396" y="527" width="132" height="132"></rect>
+            <rect id="Rectangle" fill="#A6258F" x="396" y="264" width="132" height="132"></rect>
+            <rect id="Rectangle" fill="#A6258F" x="132" y="264" width="132" height="132"></rect>
+            <rect id="Rectangle" fill="#773093" x="0" y="132" width="132" height="132"></rect>
+            <rect id="Rectangle" fill="#EC0B8D" x="264" y="132" width="132" height="132"></rect>
+            <rect id="Rectangle" fill="#EC0B8D" x="396" y="-1.42108547e-14" width="132" height="132"></rect>
+        </g>
+        <g id="2" transform="translate(463.680645, 722.000000)" fill="#FFFFFF">
+            <rect id="Rectangle" x="0.319354839" y="107" width="328" height="41"></rect>
+            <rect id="Rectangle" x="246.319355" y="53" width="82" height="41"></rect>
+            <rect id="Rectangle" x="0.319354839" y="0" width="328" height="41"></rect>
+            <rect id="Rectangle" x="0.319354839" y="213" width="328" height="41"></rect>
+            <rect id="Rectangle" x="0.319354839" y="160" width="82" height="41"></rect>
+        </g>
+        <g id="2" transform="translate(99.000000, 722.000000)" fill="#FFFFFF">
+            <rect id="Rectangle" x="1" y="107" width="328" height="41"></rect>
+            <rect id="Rectangle" x="247" y="53" width="82" height="41"></rect>
+            <rect id="Rectangle" x="1" y="0" width="328" height="41"></rect>
+            <rect id="Rectangle" x="1" y="213" width="328" height="41"></rect>
+            <rect id="Rectangle" x="0.819354839" y="160" width="82" height="41"></rect>
+        </g>
+    </g>
+</svg>
