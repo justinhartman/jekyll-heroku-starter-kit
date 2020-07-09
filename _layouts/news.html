@@ -53,7 +53,7 @@
                     </div>
                     <div class="mdl-card__supporting-text">{{ post.description | strip_html }}</div>
                     <div class="mdl-card__actions mdl-card--border">
-                        <a href="{{ post.url }}" class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
+                        <a href="{{ post.url | absolute_url }}" class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
                             Read More
                         </a>
                         <div class="mdl-layout-spacer"></div>

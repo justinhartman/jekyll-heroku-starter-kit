@@ -35,4 +35,4 @@ sitemap:
     Language: English
     Doctype: HTML5
     Theme: MaterialDocs @chromatical/jekyll-materialdocs
-    IDE: Sublime Text 3, iTerm2, Chrome, GitFox.
+    IDE: Sublime Text 3, Sketch, iTerm2, Chrome, GitFox.

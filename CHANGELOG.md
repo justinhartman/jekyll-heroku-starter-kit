@@ -3,6 +3,16 @@
 Below is a detailed Changelog, along with specific tasks completed, for each
 version released to date for the Jekyll Heroku Starter Kit.
 
+## 🚀 Version 2.0.1 (09/07/2020)
+
+- [👍 #enhancement](#enhancement)
+    - Post links in `news.html` now use `absolute_url` so they aren't relative.
+    - Updated `humans.md`.
+    - Changed URLs in documentation.
+    - Updated documentation with build log and other info.
+- [🐛 #bugfix](#bugfix)
+    - Fixed issue #2 where Heroku server crashed on build.
+
 ## 🚀 Version 2.0.0 (08/07/2020)
 
 This release migrates the boilerplate template from Jekyll 3.8 to version 4.1.
