@@ -37,9 +37,9 @@ version released to date for the Jekyll Heroku Starter Kit.
 ### 🚀 Version 2.0.0 (08/07/2020)
 
 This release migrates the boilerplate template from Jekyll 3.8 to version 4.1.
-It also includes a new Materialize theme which has replaced the original 
-`jekyll-theme-minimal` theme due to the fact it has not been migrated to work 
-with Jekyll 4 yet.
+It also includes a new Material Design Lite theme which has replaced the 
+original `jekyll-theme-minimal` theme due to the fact this old one has not 
+been migrated to work with Jekyll 4.
 
 - [🔆 #new](#new)
     - New [Material Design Lite][mdl] theme based on 
@@ -52,7 +52,8 @@ with Jekyll 4 yet.
         + `/_pages/about.md`
     - Favicons added for easy replacement.
 - [👍 #enhancement](#enhancement)
-    - New release under `MIT` license now from the original `AGPL-3.0`.
+    - This release is published under an `MIT` license from the original 
+      `AGPL-3.0` of previous versions.
     - Upgraded Jekyll site to run version `4.1.1`.
     - Upgraded `ruby` to `2.6.3`.
     - Upgraded `bundler` from `1.17.2` to `2.1.4`.
