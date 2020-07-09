@@ -73,14 +73,14 @@ These plugins are installed by default:
 
 - [jekyll-feed][jekyll-feed]
     - Generates an XML Feed at 
-        <https://jekyll-heroku-starter-kit.herokuapp.com/feed.xml>
+        <https://hartman.me/jekyll-heroku-starter-kit/feed.xml>
 - [jekyll-seo-tag][jekyll-seo-tag]
     - View the config settings in `_config.yml` and `index.md`.
 - [jekyll-sitemap][jekyll-sitemap]
     - Generates a XML Sitemap at 
-        <https://jekyll-heroku-starter-kit.herokuapp.com/sitemap.xml>
+        <https://hartman.me/jekyll-heroku-starter-kit/sitemap.xml>
     - Generates a `robots.txt` file at 
-        <https://jekyll-heroku-starter-kit.herokuapp.com/robots.txt>
+        <https://hartman.me/jekyll-heroku-starter-kit/robots.txt>
     - View the config settings in `index.md`.
 - [jekyll-paginate-v2][jekyll-paginate-v2]
     - View the config settings in `_config.yml` and `index.md`.
@@ -310,13 +310,16 @@ file for full details.
 Special thanks go out to the following people and projects who have helped in
 some way to make this project a reality.
 
-- [22 Digital][22] - for the awesome development work on the theme.
-- [Jekyll Pygments Themes][pygments-themes] - for the `github.css` styling.
-- [@justinhartman/.github][.github] - for the awesome Github project templates.
-- [Andy Croll][andy] - for his post on serving a Jekyll site on Heroku.
-- [Heroku][heroku] - for their post on running Jekyll on their platform.
-- [Picsum][picsum] - for their amazing Lorem Picsum photos.
-- [Pravatar][pravatar] - for the profile images on the author feed.
+- [22 Digital][22] for the awesome development work on the theme.
+- [Material Design Lite][mdl] for the design framework used in the theme.
+- [James King][james] for the the [MaterialDocs][jekyll-materialdocs] theme 
+  which inspired this theme.
+- [Jekyll Pygments Themes][pygments-themes] for the `github.css` theme styling.
+- [Picsum][picsum] for their amazing Lorem Picsum photos used in the site.
+- [Pravatar][pravatar] for the profile images used for the authors data.
+- [@justinhartman/.github][.github] for the awesome Github project templates.
+- [Andy Croll][andy] for his article on serving a Jekyll site on Heroku.
+- [Heroku][heroku] for their article on running Jekyll on their platform.
 
 [deploy]: #4-deployment
 [CONTRIBUTING]: CONTRIBUTING.md
@@ -342,17 +345,18 @@ some way to make this project a reality.
 [jekyll-last-modified-at]: https://github.com/gjtorikian/jekyll-last-modified-at
 [jekyll-redirect-from]: https://github.com/jekyll/jekyll-redirect-from
 [jekyll-materialdocs]: https://github.com/chromatical/jekyll-materialdocs
+[james]: https://github.com/chromatical
 [rack]: https://github.com/adaoraul/rack-jekyll
 [andy]: https://andycroll.com/ruby/serving-a-jekyll-blog-using-heroku/
 [heroku]: https://blog.heroku.com/jekyll-on-heroku
 [jekyll]: https://jekyllrb.com/
 [heroku-main]: https://www.heroku.com/
-[humans]: https://jekyll-heroku-starter-kit.herokuapp.com/humans.txt
+[humans]: https://hartman.me/jekyll-heroku-starter-kit/humans.txt
 [localhost]: http://127.0.0.1:4000
 [livesite]: /assets/images/website.png
 [blogsite]: /assets/images/news.png
-[example]: https://jekyll-heroku-starter-kit.herokuapp.com
-[mdl]: https://getmdl.io/
+[example]: https://hartman.me/jekyll-heroku-starter-kit
+[mdl]: https://getmdl.io
 [22]: https://22digital.co.za
 [pygments-themes]: https://github.com/jwarby/jekyll-pygments-themes
 [jekyll-v3]: https://github.com/justinhartman/jekyll-heroku-starter-kit/tree/jekyll-v3

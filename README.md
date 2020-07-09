@@ -70,14 +70,14 @@ These plugins are installed by default:
 
 - [jekyll-feed][jekyll-feed]
     - Generates an XML Feed at 
-        <https://jekyll-heroku-starter-kit.herokuapp.com/feed.xml>
+        <https://hartman.me/jekyll-heroku-starter-kit/feed.xml>
 - [jekyll-seo-tag][jekyll-seo-tag]
     - View the config settings in `_config.yml` and `index.md`.
 - [jekyll-sitemap][jekyll-sitemap]
     - Generates a XML Sitemap at 
-        <https://jekyll-heroku-starter-kit.herokuapp.com/sitemap.xml>
+        <https://hartman.me/jekyll-heroku-starter-kit/sitemap.xml>
     - Generates a `robots.txt` file at 
-        <https://jekyll-heroku-starter-kit.herokuapp.com/robots.txt>
+        <https://hartman.me/jekyll-heroku-starter-kit/robots.txt>
     - View the config settings in `index.md`.
 - [jekyll-paginate-v2][jekyll-paginate-v2]
     - View the config settings in `_config.yml` and `index.md`.
@@ -361,11 +361,11 @@ some way to make this project a reality.
 [heroku]: https://blog.heroku.com/jekyll-on-heroku
 [jekyll]: https://jekyllrb.com/
 [heroku-main]: https://www.heroku.com/
-[humans]: https://jekyll-heroku-starter-kit.herokuapp.com/humans.txt
+[humans]: https://hartman.me/jekyll-heroku-starter-kit/humans.txt
 [localhost]: http://127.0.0.1:4000
 [livesite]: /assets/images/website.png
 [blogsite]: /assets/images/news.png
-[example]: https://jekyll-heroku-starter-kit.herokuapp.com
+[example]: https://hartman.me/jekyll-heroku-starter-kit
 [mdl]: https://getmdl.io/
 [22]: https://22digital.co.za
 [pygments-themes]: https://github.com/jwarby/jekyll-pygments-themes
