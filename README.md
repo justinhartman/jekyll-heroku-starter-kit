@@ -2,11 +2,11 @@
 
 🧪  Comprehensive boilerplate code for setting up and running a Jekyll 4 site with a Material Design Lite theme on Heroku.
 
-*Homepage Design*
+**Homepage Design**
 
 ![Jekyll Homepage][livesite]
 
-*Blog Design*
+**Blog Design**
 
 ![Jekyll Blog][blogsite]
 
