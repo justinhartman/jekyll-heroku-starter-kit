@@ -1,7 +1,17 @@
 justinhartman:
-  picture: /assets/justinhartman.png
+  id: justinhartman
+  name: Justin Hartman
+  picture: /assets/images/authors/justin.jpg
   twitter: justinhartman
 
-anotherauthor:
-  picture:
-  twitter:
+shelly:
+  id: shelly
+  name: Shelly Levine
+  picture: https://i.pravatar.cc/300?img=24
+  twitter: randomlady
+
+ronaldreagan:
+  id: ronaldreagan
+  name: Ronald Reagan
+  picture: https://i.pravatar.cc/300?img=65
+  twitter: ronaldreagan

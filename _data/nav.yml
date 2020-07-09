@@ -1,0 +1,26 @@
+- title: "Home"
+  url: /
+  weight: 0 # Ensures this link appears at the top of the navigation bar.
+            # Use weight here and in your pages to define the order of links.
+
+- title: "22 Digital"
+  url: "https://22digital.co.za"
+  tab: true # Opens this link in a new tab.
+  id: external # Will be used as a parent item so we can created child links.
+  weight: 999 # Ensures these links appear below all the other links.
+
+- title: "22 Digital on GitHub"
+  url: "https://github.com/22digital"
+  tab: true
+  parent: external # Will make this item a child of the item above.
+                   # Not displayed when menu_style set to 'dropdown'.
+
+- title: "Justin Hartman"
+  url: "https://hartman.me"
+  tab: true
+  parent: external
+
+- title: "Justin on GitHub"
+  url: "https://github.com/justinhartman"
+  tab: true
+  parent: external

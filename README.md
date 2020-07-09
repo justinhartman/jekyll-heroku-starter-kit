@@ -1,73 +1,94 @@
 # Jekyll Heroku Starter Kit
 
-Minimum boilerplate code for setting up and running a Jekyll site on Heroku.
+🧪  Comprehensive boilerplate code for setting up and running a Jekyll 4 site with a Material Design Lite theme on Heroku.
+
+*Homepage Design*
+
+![Jekyll Homepage][livesite]
+
+*Blog Design*
+
+![Jekyll Blog][blogsite]
 
 ### Table of Contents
+<!-- MarkdownTOC -->
 
-- [1. Features](#1-features)
-  - [1.1. General](#11-general)
-  - [1.2. Plugins](#12-plugins)
+- [1. Overview](#1-overview)
+    - [1.1. Features](#11-features)
+    - [1.2. Plugins](#12-plugins)
 - [2. Getting Started](#2-getting-started)
-  - [2.1. Prerequisites](#21-prerequisites)
+    - [2.1. Prerequisites](#21-prerequisites)
 - [3. Installing](#3-installing)
-  - [3.1. Clone the Repository](#31-clone-the-repository)
-  - [3.2. Creating the Heroku App](#32-creating-the-heroku-app)
-  - [3.3. Install required Gems](#33-install-required-gems)
-  - [3.4. Adding Heroku Buildpacks](#34-adding-heroku-buildpacks)
-  - [3.5. Running Jekyll Locally](#35-running-jekyll-locally)
+    - [3.1. Clone the Repository](#31-clone-the-repository)
+    - [3.2. Creating the Heroku App](#32-creating-the-heroku-app)
+    - [3.3. Install the required Gems](#33-install-the-required-gems)
+    - [3.4. Adding Heroku Buildpacks](#34-adding-heroku-buildpacks)
+    - [3.5. Running Jekyll Locally](#35-running-jekyll-locally)
 - [4. Deployment](#4-deployment)
 - [5. Built With](#5-built-with)
 - [6. Contributing](#6-contributing)
 - [7. Code of Conduct](#7-code-of-conduct)
 - [8. Versioning](#8-versioning)
-- [9. Change-Log](#9-change-log)
+- [9. Changelog](#9-changelog)
 - [10. Authors](#10-authors)
 - [11. License](#11-license)
 - [12. Acknowledgements](#12-acknowledgements)
 
-## 1. Features
+<!-- /MarkdownTOC -->
 
-This project will setup a minimum boilerplate template for running a Jekyll
-site on Heroku. With this, there are some additional Jekyll plugins installed
-for ease of use along with a default, minimal theme.
+## 1. Overview
 
-Here's what you get.
+A boilerplate template to set up [Jekyll 4][jekyll] on a free 
+[Heroku][heroku-main] server. Included are additional Jekyll plugins to 
+showcase the full capabilities and it comes with an elegantly designed and 
+crafted [Material Design Lite][mdl] theme. 
 
-### 1.1. General
+> _If you are looking for version 3 of Jekyll instead of version 4, view 
+> [this release][1.3.0] which contains the boilerplate for Jekyll version 3._
 
-- All required files to run a Jekyll site in minutes on Heroku.
-- [jekyll-theme-minimal][jekyll-theme-minimal] - Default minimal theme installed.
+Here's what you get in this package.
+
+### 1.1. Features
+
+- Latest Jekyll site running version `4.1.1`.
+- All the required Ruby files to run a Jekyll website on Heroku in minutes.
+- [jekyll-materialdocs][jekyll-materialdocs] - a beautiful 
+  [Material Design Lite][mdl] theme elegantly crafted, installed and 
+  configured.
 - `static.json` - used by the Heroku static buildpack.
 - `Rakefile` - the Heroku Ruby buildpack runs `rake assets:precompile`
   when it’s available.
-- `config.ru` - the config file that enables this gem to serve your app on
+- `config.ru` - the config file which enables this gem to serve your app on
   Heroku using [RackJekyll][rack].
-- New `humans.md` file that outputs a file to:
-  <https://jekyll-heroku-starter-kit.herokuapp.com/humans.txt>
+- `humans.md` file which outputs a human-readable file to [/humans.txt][humans]
+- Various plugins which enhance the functionality of Jekyll _(see below for 
+  all the details)_.
 
 ### 1.2. Plugins
 
 These plugins are installed by default:
 
 - [jekyll-feed][jekyll-feed]
-  - Generates an XML Feed at <https://jekyll-heroku-starter-kit.herokuapp.com/feed.xml>
+    - Generates an XML Feed at 
+        <https://jekyll-heroku-starter-kit.herokuapp.com/feed.xml>
 - [jekyll-seo-tag][jekyll-seo-tag]
-  - See config settings in `_config.yml` and `index.md`.
+    - View the config settings in `_config.yml` and `index.md`.
 - [jekyll-sitemap][jekyll-sitemap]
-  - Generates a XML Sitemap at <https://jekyll-heroku-starter-kit.herokuapp.com/sitemap.xml>
-  - Generates a `robots.txt` file at <https://jekyll-heroku-starter-kit.herokuapp.com/robots.txt>
-  - See config settings in `index.md`.
+    - Generates a XML Sitemap at 
+        <https://jekyll-heroku-starter-kit.herokuapp.com/sitemap.xml>
+    - Generates a `robots.txt` file at 
+        <https://jekyll-heroku-starter-kit.herokuapp.com/robots.txt>
+    - View the config settings in `index.md`.
 - [jekyll-paginate-v2][jekyll-paginate-v2]
-  - See config settings in `_config.yml` and `index.md`.
+    - View the config settings in `_config.yml` and `index.md`.
 - [jekyll-include-cache][jekyll-include-cache]
 - [jekyll-last-modified-at][jekyll-last-modified-at]
-  - See config settings in `index.md`.
+    - View the config settings in `index.md`.
 - [jekyll-redirect-from][jekyll-redirect-from]
-  - See config settings in `index.md`.
+    - View the config settings in `index.md`.
 
-See the `_config.yml` and `index.md` files for all the settings which have been
-pre-configured for you, to enable the usage of these plugins. They are all well
-labelled and documented.
+View the `_config.yml` and `index.md` files for all the settings which are
+pre-configured for you. All plugins are easily labelled and well documented.
 
 ## 2. Getting Started
 
@@ -82,16 +103,16 @@ work.
 
 1. [Heroku Toolbelt][toolbelt] - the CLI interface to Heroku.
 1. A package manager for your Operating System:
-   - macOS: [Homebrew][brew]
-   - Windows: [Chocolatey][choc]
-   - Linux: `apt-get` or `yum` (distro dependent)
+    - macOS: [Homebrew][brew]
+    - Windows: [Chocolatey][choc]
+    - Linux: `apt-get` or `yum` (distro dependent)
 1. [Ruby][ruby]
 1. [Bundler][bundler] - to manage Ruby gems (see below).
 
 Once you have installed `ruby`, installing `bundler` is pretty straightforward.
 Simply run this command in a terminal window.
 
-```terminal
+```console
 $ gem install bundler
 ```
 
@@ -100,10 +121,10 @@ $ gem install bundler
 ### 3.1. Clone the Repository
 
 The first step is to clone this repository to a location on your computer. For
-this example we will assume that your default install location is a folder
+this example, we will assume that your default install location is a folder
 called `jekyll-heroku-starter-kit`.
 
-```terminal
+```console
 $ git clone https://github.com/justinhartman/jekyll-heroku-starter-kit
 ```
 
@@ -111,7 +132,7 @@ The above command will checkout the source code to the folder
 `jekyll-heroku-starter-kit/`. You can change the default location by specifying
 a folder name in the checkout command with:
 
-```terminal
+```console
 $ git clone https://github.com/justinhartman/jekyll-heroku-starter-kit custom-folder
 ```
 
@@ -120,7 +141,7 @@ $ git clone https://github.com/justinhartman/jekyll-heroku-starter-kit custom-fo
 Running the `heroku apps:create` command will create a new app on Heroku and
 add a reference to a git repository on Heroku itself.
 
-```terminal
+```console
 $ cd jekyll-heroku-starter-kit/
 $ heroku apps:create jekyll-heroku-starter-kit
 Creating ⬢ jekyll-heroku-starter-kit... done
@@ -130,7 +151,7 @@ https://jekyll-heroku-starter-kit.herokuapp.com/ | https://git.heroku.com/jekyll
 You can check that the new Heroku repo has been added to your `git` repo with
 the following command.
 
-```terminal
+```console
 $ git config --list
 remote.heroku.url=https://git.heroku.com/jekyll-heroku-starter-kit.git
 remote.heroku.fetch=+refs/heads/*:refs/remotes/heroku/*
@@ -138,13 +159,13 @@ remote.origin.url=https://github.com/justinhartman/jekyll-heroku-starter-kit.git
 remote.origin.fetch=+refs/heads/*:refs/remotes/origin/*
 ```
 
-### 3.3. Install required Gems
+### 3.3. Install the required Gems
 
 The `Gemfile` in this repository contains everything needed to setup Jekyll and
 get your app ready for publishing to Heroku. Run the following command to
 install all the required dependencies.
 
-```terminal
+```console
 $ bundle install --path vendor/bundle
 ```
 
@@ -153,7 +174,7 @@ $ bundle install --path vendor/bundle
 We need to install a few buildpacks to tell Heroku how to handle the app. You
 need to install the following by executing these commands:
 
-```terminal
+```console
 $ heroku buildpacks:add heroku/ruby
 $ heroku buildpacks:add https://github.com/heroku/heroku-buildpack-static
 ```
@@ -161,12 +182,12 @@ $ heroku buildpacks:add https://github.com/heroku/heroku-buildpack-static
 ### 3.5. Running Jekyll Locally
 
 Once done with the above you should test your Jekyll installation to ensure
-that you are able to run the site on your machine. This is very important
-before deploying your app to Heroku.
+that you can run the site on your machine. This is very important before 
+deploying your app to Heroku.
 
 Run the `jekyll serve` command to test your app.
 
-```terminal
+```console
 $ bundle exec jekyll serve
 Configuration file: /jekyll-heroku-starter-kit/_config.yml
 Invalid theme folder: _includes
@@ -185,14 +206,14 @@ Invalid theme folder: _includes
 By visiting [http://127.0.0.1:4000][localhost] you should see your newly
 built Jekyll site. This is an example of what you should be seeing.
 
-![Jekyll Site][livesite]
+![Jekyll Site][livesite]{: .responsive-img}
 
 ## 4. Deployment
 
-With everything setup in the steps above you can now deploy to Heroku. Simply
-execute the following commands to deploy a build to heroku.
+With everything completed in the steps above you can now deploy to Heroku. 
+Execute the following commands to deploy a build to heroku.
 
-```terminal
+```console
 $ cd jekyll-heroku-starter-kit/
 $ git push heroku master
 ```
@@ -216,85 +237,7 @@ remote: -----> Compiling Ruby/Rack
 remote: -----> Using Ruby version: ruby-2.6.3
 remote: -----> Installing dependencies using bundler 1.17.3
 remote:        Running: bundle install --without development:test --path vendor/bundle --binstubs vendor/bundle/bin -j4 --deployment
-remote:        Fetching gem metadata from https://rubygems.org/.........
-remote:        Fetching rake 13.0.1
-remote:        Installing rake 13.0.1
-remote:        Fetching public_suffix 4.0.5
-remote:        Using bundler 1.17.3
-remote:        Fetching colorator 1.1.0
-remote:        Fetching concurrent-ruby 1.1.6
-remote:        Installing public_suffix 4.0.5
-remote:        Installing colorator 1.1.0
-remote:        Fetching eventmachine 1.2.7
-remote:        Installing concurrent-ruby 1.1.6
-remote:        Installing eventmachine 1.2.7 with native extensions
-remote:        Fetching http_parser.rb 0.6.0
-remote:        Installing http_parser.rb 0.6.0 with native extensions
-remote:        Fetching ffi 1.13.1
-remote:        Installing ffi 1.13.1 with native extensions
-remote:        Fetching forwardable-extended 2.6.0
-remote:        Installing forwardable-extended 2.6.0
-remote:        Fetching rb-fsevent 0.10.4
-remote:        Installing rb-fsevent 0.10.4
-remote:        Fetching kramdown 1.17.0
-remote:        Installing kramdown 1.17.0
-remote:        Fetching liquid 4.0.3
-remote:        Installing liquid 4.0.3
-remote:        Fetching mercenary 0.3.6
-remote:        Installing mercenary 0.3.6
-remote:        Fetching rouge 3.20.0
-remote:        Installing rouge 3.20.0
-remote:        Fetching safe_yaml 1.0.5
-remote:        Installing safe_yaml 1.0.5
-remote:        Fetching posix-spawn 0.3.14
-remote:        Installing posix-spawn 0.3.14 with native extensions
-remote:        Fetching rack 1.6.13
-remote:        Installing rack 1.6.13
-remote:        Fetching addressable 2.7.0
-remote:        Installing addressable 2.7.0
-remote:        Fetching i18n 0.9.5
-remote:        Installing i18n 0.9.5
-remote:        Fetching pathutil 0.16.2
-remote:        Fetching rb-inotify 0.10.1
-remote:        Installing pathutil 0.16.2
-remote:        Installing rb-inotify 0.10.1
-remote:        Fetching sass-listen 4.0.0
-remote:        Fetching listen 3.2.1
-remote:        Installing listen 3.2.1
-remote:        Installing sass-listen 4.0.0
-remote:        Fetching jekyll-watch 2.2.1
-remote:        Fetching sass 3.7.4
-remote:        Installing jekyll-watch 2.2.1
-remote:        Installing sass 3.7.4
-remote:        Fetching jekyll-sass-converter 1.5.2
-remote:        Installing jekyll-sass-converter 1.5.2
-remote:        Fetching em-websocket 0.5.1
-remote:        Installing em-websocket 0.5.1
-remote:        Fetching jekyll 3.8.7
-remote:        Installing jekyll 3.8.7
-remote:        Fetching jekyll-feed 0.14.0
-remote:        Fetching jekyll-include-cache 0.2.0
-remote:        Fetching jekyll-last-modified-at 1.3.0
-remote:        Installing jekyll-include-cache 0.2.0
-remote:        Installing jekyll-feed 0.14.0
-remote:        Installing jekyll-last-modified-at 1.3.0
-remote:        Fetching jekyll-redirect-from 0.16.0
-remote:        Fetching jekyll-paginate-v2 3.0.0
-remote:        Fetching jekyll-seo-tag 2.6.1
-remote:        Installing jekyll-paginate-v2 3.0.0
-remote:        Installing jekyll-redirect-from 0.16.0
-remote:        Installing jekyll-seo-tag 2.6.1
-remote:        Fetching jekyll-sitemap 1.4.0
-remote:        Fetching rack-jekyll 0.5.0
-remote:        Installing jekyll-sitemap 1.4.0
-remote:        Fetching jekyll-theme-minimal 0.1.1
-remote:        Installing rack-jekyll 0.5.0
-remote:        Installing jekyll-theme-minimal 0.1.1
-remote:        Bundle complete! 12 Gemfile dependencies, 37 gems now installed.
-remote:        Gems in the groups development and test were not installed.
-remote:        Bundled gems are installed into `./vendor/bundle`
 remote:        Bundle completed (23.64s)
-remote:        Cleaning up the bundler cache.
 remote: -----> Writing config/database.yml to read from DATABASE_URL
 remote: -----> Detecting rake tasks
 remote: -----> Precompiling assets
@@ -310,15 +253,10 @@ remote:                Pagination: Disabled in site.config.
 remote:                            done in 0.483 seconds.
 remote:         Auto-regeneration: disabled. Use --watch to enable.
 remote:        Asset precompilation completed (1.37s)
-remote:
 remote: -----> Static HTML app detected
-remote:   % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
-remote:                                  Dload  Upload   Total   Spent    Left  Speed
-remote: 100  838k  100  838k    0     0  8360k      0 --:--:-- --:--:-- --:--:-- 8386k
 remote: -----> Installed directory to /app/bin
 remote: -----> Discovering process types
 remote:        Procfile declares types -> LANG, RACK_ENV, addons, console, rake, web
-remote:
 remote: -----> Compressing...
 remote:        Done: 21.2M
 remote: -----> Launching...
@@ -327,20 +265,18 @@ remote:        https://jekyll-heroku-starter-kit.herokuapp.com/ deployed to Hero
 remote:
 remote: Verifying deploy... done.
 To https://git.heroku.com/jekyll-heroku-starter-kit.git
-   fa218a6..07b8c9a  master -> master
 ```
 
-Visit your Heroku URL (e.g. [https://jekyll-heroku-starter-kit.herokuapp.com][example])
-and you should see the same site you built on your local machine, now published
-on Heroku.
+Visit your Heroku URL ([view demo here][example]) and you should see the same 
+site you built on your local machine, now published on Heroku.
 
 ## 5. Built With
 
-- [Jekyll 3.8.7][jekyll]
+- [Jekyll 4.1.1][jekyll]
 - [Heroku][heroku-main]
 - [ruby 2.6.3][ruby]
 - [Homebrew 2.4.0][brew]
-- [Bundler version 1.17.2][bundler]
+- [Bundler version 2.1.4][bundler]
 
 ## 6. Contributing
 
@@ -359,7 +295,7 @@ We use [Semantic Versioning][semver] for software versions of this project.
 For a list of all the versions available, see the [tags][tags] and
 [releases][releases] on this repository.
 
-## 9. Change-Log
+## 9. Changelog
 
 View the [CHANGELOG.md][changelog] file for a detailed list of changes,
 along with specific tasks completed for each version released to date.
@@ -373,17 +309,21 @@ project.
 
 ## 11. License
 
-This project is licensed under the AGPL-3.0 License. See the
-[LICENSE][license] file for full details.
+This project is licensed under the `MIT` License. See the [LICENSE][license] 
+file for full details.
 
 ## 12. Acknowledgements
 
 Special thanks go out to the following people and projects who have helped in
 some way to make this project a reality.
 
+- [22 Digital][22] - for the awesome development work on the theme.
+- [Jekyll Pygments Themes][pygments-themes] - for the `github.css` styling.
 - [@justinhartman/.github][.github] - for the awesome Github project templates.
 - [Andy Croll][andy] - for his post on serving a Jekyll site on Heroku.
 - [Heroku][heroku] - for their post on running Jekyll on their platform.
+- [Picsum][picsum] - for their amazing Lorem Picsum photos.
+- [Pravatar][pravatar] - for the profile images on the author feed.
 
 [deploy]: #4-deployment
 [CONTRIBUTING]: CONTRIBUTING.md
@@ -408,12 +348,21 @@ some way to make this project a reality.
 [jekyll-include-cache]: https://github.com/benbalter/jekyll-include-cache
 [jekyll-last-modified-at]: https://github.com/gjtorikian/jekyll-last-modified-at
 [jekyll-redirect-from]: https://github.com/jekyll/jekyll-redirect-from
-[jekyll-theme-minimal]: https://github.com/pages-themes/minimal
+[jekyll-materialdocs]: https://github.com/chromatical/jekyll-materialdocs
 [rack]: https://github.com/adaoraul/rack-jekyll
 [andy]: https://andycroll.com/ruby/serving-a-jekyll-blog-using-heroku/
 [heroku]: https://blog.heroku.com/jekyll-on-heroku
 [jekyll]: https://jekyllrb.com/
 [heroku-main]: https://www.heroku.com/
+[humans]: https://jekyll-heroku-starter-kit.herokuapp.com/humans.txt
 [localhost]: http://127.0.0.1:4000
-[livesite]: /config/livesite.jpg
+[livesite]: /assets/images/website.png
+[blogsite]: /assets/images/news.png
 [example]: https://jekyll-heroku-starter-kit.herokuapp.com
+[mdl]: https://getmdl.io/
+[22]: https://22digital.co.za
+[pygments-themes]: https://github.com/jwarby/jekyll-pygments-themes
+[jekyll-v3]: https://github.com/justinhartman/jekyll-heroku-starter-kit/tree/jekyll-v3
+[1.3.0]: https://github.com/justinhartman/jekyll-heroku-starter-kit/releases/tag/1.3.0
+[picsum]: https://picsum.photos
+[pravatar]: https://pravatar.cc

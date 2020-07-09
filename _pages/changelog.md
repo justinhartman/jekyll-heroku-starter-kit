@@ -1,9 +1,40 @@
-# Changelog for the Jekyll Heroku Starter Kit
+---
+layout: page
+published: true
+title: Project Changelog
+description: "A description for the about page which appears in SEO."
+author: justinhartman
+lang: en_GB
+# Sidebar Navigation Settings.
+menu: Changelog # Set to false to hide from the menu completely.
+weight: 4 # Lower weights rise to the top of the side navigation menu.
+# Override global color scheme for this page. 
+# https://getmdl.io/customize/index.html
+mdl_colors: yellow-green
+search: true # 'false' hides this page from search results.
+# Add the category this page should belong to.
+# When set, the permalink is made up of /:category/:title (e.g. /pages/about)
+category: pages
+# This sets a Hero image which displays above the first line of content.
+# Images should be 666px width and 350px height. If you need to change this you
+# will need to edit the code in '_layouts/page.html'.
+# Make "image:false" if you don't want an image to display.
+image: https://picsum.photos/666/350.jpg
+# Settings for @jekyll-paginate-v2
+# https://github.com/sverrirs/jekyll-paginate-v2
+pagination:
+    enabled: true
+# Sitemap Settings.
+sitemap:
+    changefreq: monthly
+    priority: 1.0
+---
+## 📝 Package Changelog
 
 Below is a detailed Changelog, along with specific tasks completed, for each
 version released to date for the Jekyll Heroku Starter Kit.
 
-## 🚀 Version 2.0.0 (08/07/2020)
+### 🚀 Version 2.0.0 (08/07/2020)
 
 This release migrates the boilerplate template from Jekyll 3.8 to version 4.1.
 It also includes a new Materialize theme which has replaced the original 
@@ -26,7 +57,7 @@ with Jekyll 4 yet.
     - Upgraded `ruby` to `2.6.3`.
     - Upgraded `bundler` from `1.17.2` to `2.1.4`.
 
-## 🧪 Version 1.3.0 (07/07/2020)
+### 🧪 Version 1.3.0 (07/07/2020)
 
 This is the final release for the Jekyll 3 series. Later releases will all 
 only work with Jekyll 4. If you are using a theme that only supports Jekyll 3 
@@ -48,7 +79,7 @@ updates to [this version 3 branch][jekyll-v3] and is merely an archive.
     - Updated `ruby` to `2.6.3`.
     - Updated `README.md` and `index.md`.
 
-## ⌛️ Version 1.2.0 (27/05/2018)
+### ⌛️ Version 1.2.0 (27/05/2018)
 
 - [🔆 #new](#new)
     - Configured and added the settings for `@jekyll-paginate-v2` to 
@@ -61,65 +92,6 @@ updates to [this version 3 branch][jekyll-v3] and is merely an archive.
     - Disabled `@jekyll-paginate-v2` as it messes up homepage layout. Template
       files need to be edited for this plugin to work.
 
-## ⌛️ Version 1.1.0 (27/05/2018)
-
-- [🔆 #new](#new)
-    - Configured and added the settings for `@jekyll-seo-tag` to `_config.yml`
-    - Configured and added the settings for `@jekyll-seo-tag` to `index.md`
-    - Configured and added the settings for `@jekyll-sitemap` to `index.md`
-    - Defined collections for use in `_config.yml`
-    - Added customised `sitemap.xml` and a `sitemap.xsl` template file
-      `<https://jekyll-heroku-starter-kit.herokuapp.com/sitemap.xml>`.
-    - Added customised `feed.xml` and a `feed.xslt.xml` template file.
-      `<https://jekyll-heroku-starter-kit.herokuapp.com/feed.xml>`.
-    - New `humans.md` file that outputs a file to
-      `<https://jekyll-heroku-starter-kit.herokuapp.com/humans.txt>`.
-- [👍 #enhancement](#enhancement)
-    - Updated `README.md` and `index.md`.
-    - Various enhancements with `static.json` edits.
-    - Major enhancement to the `Procfile`.
-- [🐛 #bugfix](#bugfix)
-    - Fixed a build bug with the Gem dependencies.
-    - Update `_config.yml` by removing a duplicate `logo` key.
-    - Fixed bug where neither `sitemap.xml` nor `feed.xml` were rendering.
-
-## ⌛️ Version 1.0.1 (26/05/2018)
-
-Minor edits; don't affect functionality.
-
-- [🔆 #new](#new)
-    - New settings added to VS Code Workspace file.
-- [🐛 #bugfix](#bugfix)
-    - Fixed broken link in `README.md`.
-    - Removed unnecessary whitespace in `README.md` and `index.md`.
-
-## ⌛️ Version 1.0.0 (26/05/2018)
-
-First _production-ready_ release. Works out the box.
-
-- [🔆 #new](#new)
-    - Added the following files required by Heroku:
-        - `config.ru`
-        - `Procfile`
-    - Added `Gemfile` to install Jekyll.
-    - New `static.json` for the Heroku buildpack.
-    - New `Rakefile` for the Heroku buildpack.
-    - `index.md` that contains the contents of the `README.md` for the 
-      main site.
-    - Added a default minimal site theme (jekyll-theme-minimal).
-- [👍 #enhancement](#enhancement)
-    - Updated all the `*.md` files from the @justinhartman/.github project.
-    - Updated `.gitignore` to exclude all project build files.
-    - Added some Visual Studio Code settings to the workspace file.
-    - Completed the contents for the `README.md` file with full setup and 
-      install instructions.
-
-## ⌛️ Version 0.0.1 (26/05/2018)
-
-- [🔆 #new](#new)
-    - Initial Commit
-
-[blog]: https://blog.heroku.com/using-http-headers-to-secure-your-site
 [theme]: https://github.com/chromatical/jekyll-materialdocs
 [jekyll-v3]: https://github.com/justinhartman/jekyll-heroku-starter-kit/tree/jekyll-v3
 [mdl]: https://getmdl.io/

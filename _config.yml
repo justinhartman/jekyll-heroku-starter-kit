@@ -1,12 +1,27 @@
 ---
 title: Jekyll Heroku Starter Kit
-description: Minimum boilerplate code for setting up and running a Jekyll site on Heroku.
+tagline: Comprehensive boilerplate code for installing and configuring a Jekyll 4 site on Heroku with an elegant Material Design Lite theme.
 timezone: Africa/Johannesburg
 locale: en_GB
-## Set the url to your site below ##
+##
+## Set the url to your site below
+##
 url:
 baseurl:
-## Enabling Collections for the Site. ##
+##
+## Material Design Lite theme options.
+## https://github.com/chromatical/jekyll-materialdocs
+##
+theme: jekyll-materialdocs
+mdl_colors: pink-blue # a supported MDL color scheme (https://getmdl.io/customize/index.html)
+logo: /assets/images/logo.svg # an absolute or relative image path to use as the site logo
+copyright: 22 Digital # will override the copyright notice (default is site title)
+search: true # enabled by default, set to false to disable site search
+#menu_style: dropdown # will only show child menu items for the main item selected
+google_analytics: UA-100937492-4
+##
+## Enabling Collections for the Site.
+##
 collections:
   posts:
     title                     : Posts
@@ -16,41 +31,38 @@ collections:
     title                     : Pages
     output                    : true
     permalink                 : /:categories/:title.html
-## Theme settings ##
-theme: jekyll-theme-minimal
-logo: https://via.placeholder.com/250x100.png/E8117F/fff?text=Logo+Placeholder
-show_downloads: true
-google_analytics: UA-100937492-4
-## Exclude files from the build ##
+##
+## Exclude these files from the build.
+##
 exclude:
-- '_site'
-- '.bundle'
 - '.github'
-- '.sass-cache'
-- 'vendor'
-- '_config.yml'
+- '.editorconfig'
 - '.gitignore'
+- '_config.yml'
 - 'CHANGELOG.md'
 - 'CODE_OF_CONDUCT.md'
 - 'config.ru'
 - 'CONTRIBUTING.md'
-- 'Gemfile'
-- 'Gemfile.lock'
 - 'LICENSE'
 - 'Procfile'
 - 'Rakefile'
 - 'README.md'
 - 'static.json'
-## Configure and setup plugins for the site. ##
+##
+## Configure and setup the plugins for the site.
+##
 plugins:
-- jekyll-feed
-- jekyll-seo-tag
-- jekyll-sitemap
-- jekyll-paginate-v2
-- jekyll-include-cache
-- jekyll-last-modified-at
-- jekyll-redirect-from
-## All the Settings for the @jekyll-seo-tag ##
+- jekyll-feed # https://github.com/jekyll/jekyll-feed
+- jekyll-seo-tag # https://github.com/jekyll/jekyll-seo-tag
+- jekyll-sitemap # https://github.com/jekyll/jekyll-sitemap
+- jekyll-paginate-v2 # https://github.com/sverrirs/jekyll-paginate-v2
+- jekyll-include-cache # https://github.com/benbalter/jekyll-include-cache
+- jekyll-last-modified-at # https://github.com/gjtorikian/jekyll-last-modified-at
+- jekyll-redirect-from # https://github.com/jekyll/jekyll-redirect-from
+##
+## All the Settings for the @jekyll-seo-tag
+## https://github.com/jekyll/jekyll-seo-tag
+##
 # Your twitter details
 twitter:
   username: justinhartman
@@ -61,7 +73,7 @@ facebook:
   app_id: 1234
   publisher: 1234
   admins: 1234
-# Links to other social profiles or websites that relate to you.
+# Links to other social profiles or websites that you own.
 social:
   name: Justin Hartman
   links:
@@ -78,14 +90,17 @@ webmaster_verifications:
   yandex: 1234
   baidu: 1234
 # Setting a default image:
-# Settings to provide a default Twitter Card or OGP image to all of your
-# posts and pages.
+# Settings to provide a default Twitter Card or OGP image to all of your posts
+# and pages.
 defaults:
   - scope:
       path: ""
     values:
-      image: /assets/default-card.png # change this to a Generic image.
-## All the Settings for the @jekyll-paginate-v2 ##
+      image: https://picsum.photos/1200/630.jpg
+##
+## All the Settings for the @jekyll-paginate-v2
+## https://github.com/sverrirs/jekyll-paginate-v2
+##
 pagination:
   enabled: false # Set to true to enable Pagination. Enable only once editing theme files.
   debug: false

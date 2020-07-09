@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="{{ site.lang | default: "en-GB" }}">
+
+<head>
+    {% include head.html %}
+</head>
+
+<body>
+    <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header mdl-layout--fixed-drawer">
+        <header class="mdl-layout__header">
+            <div class="mdl-layout__header-row">
+                <span class="mdl-layout-title">
+                    {% if page.title %}<h1 id="page-title" class="mdl-typography--title">{{ page.title }}</h1>{% endif %}
+                </span>
+                {% if site.search != false %}
+                <div class="mdl-layout-spacer"></div>
+                <a href="{% link assets/search.html %}" class="mdl-button mdl-js-button mdl-button--icon">
+                    <i class="material-icons">search</i>
+                </a>
+                {% endif %}
+            </div>
+        </header>
+        <div class="mdl-layout__drawer">
+            <span class="mdl-layout-title">
+                {%- if site.logo %}
+                <a id="site-title" href="{{ '/' | absolute_url }}">
+                    <img src="{{ site.logo | absolute_url }}" alt="" id="site-logo">
+                </a>
+                {% else %}
+                <a id="site-title" href="{{ '/' | absolute_url }}">{{ site.title }}</a>
+                {% endif -%}
+            </span>
+            <nav class="mdl-navigation">
+                {%- include menu.html -%}
+            </nav>
+        </div>
+        <div class="ribbon-news" style="background-image: url('{{ page.image }}');"></div>
+        <main class="main mdl-layout__content">
+            <!-- News Hero -->
+            <div class="main-container mdl-grid">
+                <div class="news-content mdl-color-text--white mdl-cell mdl-cell--12-col">
+                    <h1>{{ page.title }}</h1>
+                    <p>{{ page.description }}</p>
+                </div>
+            </div>
+            <!-- Posts Loop Start -->
+            <div class="mdl-grid">
+                {% for post in site.posts %}
+                {% assign author = site.data.authors[post[author]] %}
+                <div class="wide-card mdl-card mdl-cell--3-col mdl-cell--4-col-tablet mdl-cell--12-col-phone mdl-shadow--4dp">
+                    <div class="mdl-card__title" style="background: url('{{ post.image }}') center / cover;">
+                        <h2 class="mdl-card__title-text">{{ post.title }}</h2>
+                    </div>
+                    <div class="mdl-card__supporting-text">{{ post.description | strip_html }}</div>
+                    <div class="mdl-card__actions mdl-card--border">
+                        <a href="{{ post.url }}" class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
+                            Read More
+                        </a>
+                        <div class="mdl-layout-spacer"></div>
+                        <span class="mdl-chip mdl-chip--contact">
+                            <span class="mdl-chip__contact mdl-color--green mdl-color-text--white">
+                                <i class="material-icons">today</i>
+                            </span>
+                            <span class="mdl-chip__text">{{ post.date | date: "%d/%m/%y" }}</span>
+                        </span>
+                    </div>
+                    <div class="mdl-card__menu">
+                        <img src="{{ author.picture | absolute_url }}" class="mdl-list__item-avatar" alt="{{ author.name }}">
+                    </div>
+                </div>
+                {% endfor %}
+            </div>
+            <!-- Posts Loop End -->
+            <footer class="main-footer mdl-mini-footer">
+                {% include footer.html -%}
+            </footer>
+        </main>
+    </div>
+    <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+</body>
+
+</html>
