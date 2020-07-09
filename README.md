@@ -221,46 +221,53 @@ $ git push heroku master
 This will generate a build log that should resemble the below success.
 
 ```console
-Enumerating objects: 18, done.
-Counting objects: 100% (18/18), done.
+Enumerating objects: 7, done.
+Counting objects: 100% (7/7), done.
 Delta compression using up to 4 threads
-Compressing objects: 100% (10/10), done.
-Writing objects: 100% (10/10), 153.31 KiB | 10.95 MiB/s, done.
-Total 10 (delta 7), reused 0 (delta 0)
+Compressing objects: 100% (4/4), done.
+Writing objects: 100% (4/4), 1.02 KiB | 1.02 MiB/s, done.
+Total 4 (delta 2), reused 0 (delta 0)
 remote: Compressing source files... done.
 remote: Building source:
 remote:
 remote: -----> Ruby app detected
-remote: -----> Installing bundler 1.17.3
+remote: -----> Installing bundler 2.0.2
 remote: -----> Removing BUNDLED WITH version in the Gemfile.lock
 remote: -----> Compiling Ruby/Rack
 remote: -----> Using Ruby version: ruby-2.6.3
-remote: -----> Installing dependencies using bundler 1.17.3
+remote: -----> Installing dependencies using bundler 2.0.2
 remote:        Running: bundle install --without development:test --path vendor/bundle --binstubs vendor/bundle/bin -j4 --deployment
-remote:        Bundle completed (23.64s)
+remote:        Bundle complete! 13 Gemfile dependencies, 40 gems now installed.
+remote:        Gems in the groups development and test were not installed.
+remote:        Bundled gems are installed into `./vendor/bundle`
+remote:        Bundle completed (0.46s)
+remote:        Cleaning up the bundler cache.
 remote: -----> Writing config/database.yml to read from DATABASE_URL
 remote: -----> Detecting rake tasks
 remote: -----> Precompiling assets
 remote:        Running: rake assets:precompile
-remote:        Configuration file: /tmp/build_7c043d4debd1a9e02e7244a541fc709d/_config.yml
-remote:                    Source: /tmp/build_7c043d4debd1a9e02e7244a541fc709d
-remote:               Destination: /tmp/build_7c043d4debd1a9e02e7244a541fc709d/_site
+remote:        Configuration file: /tmp/build_ed03c9f0880edd21c87388e3af02255f/_config.yml
+remote:                    Source: /tmp/build_ed03c9f0880edd21c87388e3af02255f
+remote:               Destination: /tmp/build_ed03c9f0880edd21c87388e3af02255f/_site
 remote:         Incremental build: disabled. Enable with --incremental
 remote:              Generating...
 remote:               Jekyll Feed: Generating feed for posts
 remote:                 AutoPages: Disabled/Not configured in site.config.
 remote:                Pagination: Disabled in site.config.
-remote:                            done in 0.483 seconds.
+remote:                            done in 1.057 seconds.
 remote:         Auto-regeneration: disabled. Use --watch to enable.
-remote:        Asset precompilation completed (1.37s)
+remote:        Asset precompilation completed (1.91s)
 remote: -----> Static HTML app detected
+remote:   % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+remote:                                  Dload  Upload   Total   Spent    Left  Speed
+remote: 100  838k  100  838k    0     0  8284k      0 --:--:-- --:--:-- --:--:-- 8303k
 remote: -----> Installed directory to /app/bin
 remote: -----> Discovering process types
 remote:        Procfile declares types -> LANG, RACK_ENV, addons, console, rake, web
 remote: -----> Compressing...
-remote:        Done: 21.2M
+remote:        Done: 54.1M
 remote: -----> Launching...
-remote:        Released v29
+remote:        Released v31
 remote:        https://jekyll-heroku-starter-kit.herokuapp.com/ deployed to Heroku
 remote:
 remote: Verifying deploy... done.
