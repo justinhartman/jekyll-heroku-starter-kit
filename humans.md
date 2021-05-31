@@ -7,14 +7,14 @@ sitemap:
 ---
 /* TEAM */
     Creator: Justin Hartman
-    Email: justin [@] hartman.me
-    Web: https://hartman.me
+    Email: me [@] justinhartman.co
+    Web: https://justinhartman.co
     Twitter: @justinhartman
-    Facebook: https://fb.me/justinhartman.blog
+    Facebook: https://fb.me/justinhartman.co
     From: Cape Town, South Africa
 
 /* THANKS */
-    22 Digital: https://22digital.co.za
+    22 Digital: https://22digital.ltd
     Andy Croll: https://andycroll.com/ruby/serving-a-jekyll-blog-using-heroku/
 
 /* PLATFORMS */

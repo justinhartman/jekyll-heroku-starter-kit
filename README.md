@@ -50,7 +50,7 @@ Here's what you get in this package.
 
 ### 1.1. Features
 
-- Latest Jekyll site running version `4.1.1`.
+- Latest Jekyll site running version `4.2.0`.
 - All the required Ruby files to run a Jekyll website on Heroku in minutes.
 - [jekyll-materialdocs][jekyll-materialdocs] - a beautiful 
   [Material Design Lite][mdl] theme elegantly crafted, installed and 
@@ -70,14 +70,14 @@ These plugins are installed by default:
 
 - [jekyll-feed][jekyll-feed]
     - Generates an XML Feed at 
-        <https://hartman.me/jekyll-heroku-starter-kit/feed.xml>
+        <https://justinhartman.co/jekyll-heroku-starter-kit/feed.xml>
 - [jekyll-seo-tag][jekyll-seo-tag]
     - View the config settings in `_config.yml` and `index.md`.
 - [jekyll-sitemap][jekyll-sitemap]
     - Generates a XML Sitemap at 
-        <https://hartman.me/jekyll-heroku-starter-kit/sitemap.xml>
+        <https://justinhartman.co/jekyll-heroku-starter-kit/sitemap.xml>
     - Generates a `robots.txt` file at 
-        <https://hartman.me/jekyll-heroku-starter-kit/robots.txt>
+        <https://justinhartman.co/jekyll-heroku-starter-kit/robots.txt>
     - View the config settings in `index.md`.
 - [jekyll-paginate-v2][jekyll-paginate-v2]
     - View the config settings in `_config.yml` and `index.md`.
@@ -279,11 +279,11 @@ site you built on your local machine, now published on Heroku.
 
 ## 5. Built With
 
-- [Jekyll 4.1.1][jekyll]
+- [Jekyll 4.2.0][jekyll]
 - [Heroku][heroku-main]
-- [ruby 2.6.3][ruby]
+- [ruby 2.7.1][ruby]
 - [Homebrew 2.4.0][brew]
-- [Bundler version 2.1.4][bundler]
+- [Bundler version 2.2.9][bundler]
 
 ## 6. Contributing
 
@@ -361,13 +361,13 @@ some way to make this project a reality.
 [heroku]: https://blog.heroku.com/jekyll-on-heroku
 [jekyll]: https://jekyllrb.com/
 [heroku-main]: https://www.heroku.com/
-[humans]: https://hartman.me/jekyll-heroku-starter-kit/humans.txt
+[humans]: https://justinhartman.co/jekyll-heroku-starter-kit/humans.txt
 [localhost]: http://127.0.0.1:4000
 [livesite]: /assets/images/website.png
 [blogsite]: /assets/images/news.png
-[example]: https://hartman.me/jekyll-heroku-starter-kit
+[example]: https://justinhartman.co/jekyll-heroku-starter-kit
 [mdl]: https://getmdl.io/
-[22]: https://22digital.co.za
+[22]: https://22digital.ltd
 [pygments-themes]: https://github.com/jwarby/jekyll-pygments-themes
 [jekyll-v3]: https://github.com/justinhartman/jekyll-heroku-starter-kit/tree/jekyll-v3
 [1.3.0]: https://github.com/justinhartman/jekyll-heroku-starter-kit/releases/tag/1.3.0

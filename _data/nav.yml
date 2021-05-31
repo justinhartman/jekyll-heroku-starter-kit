@@ -4,7 +4,7 @@
             # Use weight here and in your pages to define the order of links.
 
 - title: "22 Digital"
-  url: "https://22digital.co.za"
+  url: "https://22digital.ltd"
   tab: true # Opens this link in a new tab.
   id: external # Will be used as a parent item so we can created child links.
   weight: 999 # Ensures these links appear below all the other links.
@@ -16,7 +16,7 @@
                    # Not displayed when menu_style set to 'dropdown'.
 
 - title: "Justin Hartman"
-  url: "https://hartman.me"
+  url: "https://justinhartman.co"
   tab: true
   parent: external
 

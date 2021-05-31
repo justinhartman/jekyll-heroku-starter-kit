@@ -48,4 +48,4 @@ aliquam dolor. Totam ullam perspiciatis earum quibusdam, magnam ipsum dicta
 consectetur accusantium.
 {: .mdl-cell--9-col .float-right}
 
-[22]: https://22digital.co.za
+[22]: https://22digital.ltd

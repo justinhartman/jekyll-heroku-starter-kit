@@ -3,6 +3,17 @@
 Below is a detailed Changelog, along with specific tasks completed, for each
 version released to date for the Jekyll Heroku Starter Kit.
 
+## 🚀 Version 2.0.2 (31/05/2021)
+
+- [👍 #enhancement](#enhancement)
+    - Hyperlinked the company name in the footer with new CSS style.
+    - Added historical releases to [Changelog](/pages/changelog.html) page.
+    - Upgraded Jekyll from `4.1.1` to `4.2.0`.
+    - Upgraded `ruby` from `2.6.3` to `2.7.1`.
+    - Upgraded `bundler` from `2.1.4` to `2.2.3`.
+    - Security fix upgrades to remaining `Gemfile` packages.
+    - Updated content on README and Home pages.
+
 ## 🚀 Version 2.0.1 (09/07/2020)
 
 - [👍 #enhancement](#enhancement)

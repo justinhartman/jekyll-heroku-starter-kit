@@ -80,6 +80,6 @@ This Code of Conduct is adapted from the [Contributor Covenant][homepage],
 version 1.4, available at:
 [http://contributor-covenant.org/version/1/4][version].
 
-[email]: mailto:justin@hartman.me?subject=Contributor+Covenant+Code+of+Conduct
+[email]: mailto:me@justinhartman.co?subject=Contributor+Covenant+Code+of+Conduct
 [homepage]: http://contributor-covenant.org
 [version]: http://contributor-covenant.org/version/1/4/

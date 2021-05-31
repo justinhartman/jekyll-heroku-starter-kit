@@ -15,7 +15,7 @@ baseurl:
 theme: jekyll-materialdocs
 mdl_colors: pink-blue # a supported MDL color scheme (https://getmdl.io/customize/index.html)
 logo: /assets/images/logo.svg # an absolute or relative image path to use as the site logo
-copyright: 22 Digital # will override the copyright notice (default is site title)
+copyright: 22 Digital Ltd # will override the company name in the copyright (default is site title)
 search: true # enabled by default, set to false to disable site search
 #menu_style: dropdown # will only show child menu items for the main item selected
 google_analytics: UA-100937492-4
@@ -78,7 +78,7 @@ social:
   name: Justin Hartman
   links:
     - https://twitter.com/justinhartman
-    - https://www.facebook.com/justinhartman.blog
+    - https://www.facebook.com/justinhartman.co
     - https://www.linkedin.com/in/justinhartman
     - https://github.com/justinhartman
 # When you verify with either of the Webmaster Tools below, enter the
