@@ -6,9 +6,8 @@
 </head>
 
 <body>
-    <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header mdl-layout--fixed-drawer has-drawer is-upgraded" data-upgraded=",MaterialLayout">
+    <div class="mdl-layout mdl-js-layout mdl-layout--fixed-drawer mdl-layout--fixed-header">
         <header class="mdl-layout__header">
-            <div aria-expanded="false" role="button" tabindex="0" class="mdl-layout__drawer-button"><i class="material-icons">menu</i></div>
             <div class="mdl-layout__header-row">
                 <span class="mdl-layout-title">
                     {% if page.title %}<h1 id="page-title" class="mdl-typography--title">{{ page.title }}</h1>{% endif %}
@@ -38,7 +37,8 @@
         <div class="ribbon"></div>
         <main class="main mdl-layout__content">
             <div class="main-container mdl-grid">
-                <div class="mdl-cell mdl-cell--2-col mdl-cell--hide-tablet mdl-cell--hide-phone"></div>
+                <div class="mdl-cell mdl-cell--2-col"></div>
+                <!-- <div class="mdl-cell mdl-cell--2-col mdl-cell--hide-tablet mdl-cell--hide-phone"></div> -->
                 <div class="main-content mdl-color--white mdl-shadow--4dp mdl-color-text--grey-800 mdl-cell mdl-cell--8-col"{% if page.image != false %} style="background-image:url('{{ page.image }}');background-repeat:no-repeat;background-size:100% 350px;padding-top:350px;"{% endif %}>
                     {{ content }}
                 </div>
