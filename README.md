@@ -281,7 +281,7 @@ site you built on your local machine, now published on Heroku.
 
 - [Jekyll 4.2.0][jekyll]
 - [Heroku][heroku-main]
-- [ruby 2.7.1][ruby]
+- [ruby 2.7.3][ruby]
 - [Homebrew 2.4.0][brew]
 - [Bundler version 2.2.9][bundler]
 
