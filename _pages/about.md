@@ -10,7 +10,7 @@ menu: About Us # Set to false to hide from the menu completely.
 weight: 3 # Lower weights rise to the top of the side navigation menu.
 # Override global color scheme for this page. 
 # https://getmdl.io/customize/index.html
-mdl_colors: deep_orange-blue
+mdl_colors: green-deep_purple
 search: true # 'false' hides this page from search results.
 # Add the category this page should belong to.
 # When set, the permalink is made up of /:category/:title (e.g. /pages/about)

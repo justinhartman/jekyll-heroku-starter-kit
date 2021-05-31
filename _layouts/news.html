@@ -1,5 +1,5 @@
-<!DOCTYPE html>
-<html lang="{{ site.lang | default: "en-GB" }}">
+<!doctype html>
+<html lang="{{ site.lang | default: "en" }}">
 
 <head>
     {% include head.html %}
@@ -22,16 +22,16 @@
         </header>
         <div class="mdl-layout__drawer">
             <span class="mdl-layout-title">
-                {%- if site.logo %}
+            {%- if site.logo %}
                 <a id="site-title" href="{{ '/' | absolute_url }}">
-                    <img src="{{ site.logo | absolute_url }}" alt="" id="site-logo">
+                    <img src="{{ site.logo | absolute_url }}" alt="{{ site.title }}" id="site-logo">
                 </a>
-                {% else %}
+            {% else %}
                 <a id="site-title" href="{{ '/' | absolute_url }}">{{ site.title }}</a>
-                {% endif -%}
+            {% endif -%}
             </span>
             <nav class="mdl-navigation">
-                {%- include menu.html -%}
+                {%- include menu.html %}
             </nav>
         </div>
         <div class="ribbon-news" style="background-image: url('{{ page.image }}');"></div>
