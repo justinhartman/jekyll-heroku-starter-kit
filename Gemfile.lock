@@ -85,7 +85,7 @@ PLATFORMS
 
 DEPENDENCIES
   bundler (~> 2.2.3)
-  jekyll (~> 4.0)
+  jekyll (~> 4.2.0)
   jekyll-feed
   jekyll-include-cache
   jekyll-last-modified-at
