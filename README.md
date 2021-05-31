@@ -166,7 +166,8 @@ get your app ready for publishing to Heroku. Run the following command to
 install all the required dependencies.
 
 ```console
-$ bundle install --path vendor/bundle
+$ bundle config set --local path 'vendor/bundle'
+$ bundle install
 ```
 
 ### 3.4. Adding Heroku Buildpacks
