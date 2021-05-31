@@ -13,6 +13,7 @@ version released to date for the Jekyll Heroku Starter Kit.
     - Upgraded `bundler` from `2.1.4` to `2.2.3`
     - Security fix upgrades to remaining `Gemfile` packages
     - Updated content on README and Home pages
+    - Fixed navigation link indentation in `head.html` template
 - [🐛 #bugfix](#bugfix)
     - Fixes issue #4 by referencing `manifest.json` instead of `site.webmanifest`
     - Fixes issue #6 where Heroku build fails on updated `Gemfile`
