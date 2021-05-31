@@ -1,12 +1,12 @@
-<!DOCTYPE html>
-<html lang="{{ site.lang | default: "en-GB" }}">
+<!doctype html>
+<html lang="{{ site.lang | default: "en" }}">
 
 <head>
     {% include head.html %}
 </head>
 
 <body>
-    <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header mdl-layout--fixed-drawer">
+    <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header mdl-layout--fixed-drawer has-drawer">
         <header class="mdl-layout__header">
             <div class="mdl-layout__header-row">
                 <span class="mdl-layout-title">
@@ -24,14 +24,14 @@
             <span class="mdl-layout-title">
             {%- if site.logo %}
                 <a id="site-title" href="{{ '/' | absolute_url }}">
-                    <img src="{{ site.logo | absolute_url }}" alt="" id="site-logo">
+                    <img src="{{ site.logo | absolute_url }}" alt="{{ site.title }}" id="site-logo">
                 </a>
             {% else %}
                 <a id="site-title" href="{{ '/' | absolute_url }}">{{ site.title }}</a>
             {% endif -%}
             </span>
             <nav class="mdl-navigation">
-                {%- include menu.html -%}
+                {%- include menu.html %}
             </nav>
         </div>
         <div class="ribbon"></div>
